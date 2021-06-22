@@ -1,10 +1,32 @@
-import "./App.css";
+import { Route, Switch } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Home from "./pages/Home";
+import Discover from "./pages/Discover";
+import HowItWorks from "./pages/HowItWorks";
+import Upload from "./pages/Upload";
+import ConnectWallet from "./pages/ConnectWallet";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route path="/discover" exact>
+          <Discover />
+        </Route>
+        <Route path="/how-it-works" exact>
+          <HowItWorks />
+        </Route>
+        <Route path="/upload" exact>
+          <Upload />
+        </Route>
+        <Route path="/connect-wallet" exact>
+          <Upload />
+        </Route>
+      </Switch>
+    </Layout>
   );
 }
 
