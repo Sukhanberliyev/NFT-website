@@ -1,27 +1,42 @@
 import { NavLink } from "react-router-dom";
+import classes from "./NavigationBar.module.css";
 
 const NavigationBar = () => {
   return (
     <header>
-      <div>
-        <NavLink to="/">Logo</NavLink>
+      <div className={classes.center}>
+        <div className={classes.navBar}>
+          <div>
+            <NavLink to="/" className={classes.logo}>
+              cryptonite
+            </NavLink>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <NavLink className={classes.links} to="/discover">
+                  Discover
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={classes.links} to="/how-it-works">
+                  How it works?
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={classes.uploadBtn} to="/upload">
+                  Upload
+                </NavLink>
+              </li>
+              <li>
+                <NavLink className={classes.walletBtn} to="/connect-wallet">
+                  Connect Wallet
+                </NavLink>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/discover">Discover</NavLink>
-          </li>
-          <li>
-            <NavLink to="/how-it-works">How it works?</NavLink>
-          </li>
-          <li>
-            <NavLink to="/upload">Upload</NavLink>
-          </li>
-          <li>
-            <NavLink to="/connect-wallet">Connect Wallet</NavLink>
-          </li>
-        </ul>
-      </nav>
     </header>
   );
 };
