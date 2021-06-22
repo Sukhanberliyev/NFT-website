@@ -23,7 +23,7 @@ function App() {
           <Upload />
         </Route>
         <Route path="/connect-wallet" exact>
-          <Upload />
+          <ConnectWallet />
         </Route>
       </Switch>
     </Layout>
