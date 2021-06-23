@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import classes from "./NavigationBar.module.css";
+import logo from "../../assets/logo.png"
 
 const NavigationBar = () => {
   return (
@@ -8,7 +9,8 @@ const NavigationBar = () => {
         <div className={classes.navBar}>
           <div>
             <NavLink to="/" className={classes.logo}>
-              cryptonite
+              <img src={logo} alt="" />
+              Cryptonite
             </NavLink>
           </div>
           <nav>
