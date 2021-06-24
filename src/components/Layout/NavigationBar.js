@@ -1,46 +1,83 @@
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import classes from "./NavigationBar.module.css";
-import logo from "../../assets/logo.png"
 
-const NavigationBar = () => {
+import logo from "../../assets/logo.png";
+import "./NavigationBar.css";
+
+function NavigationBar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
+
   return (
-    <header>
-      <div className={classes.center}>
-        <div className={classes.navBar}>
-          <div>
-            <NavLink to="/" className={classes.logo}>
-              <img src={logo} alt="" />
-              Cryptonite
-            </NavLink>
+    <>
+      <nav className="navbar">
+        <div className="navbar-container">
+          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <img src={logo} alt="" />
+            Cryptonite
+          </NavLink>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <nav>
-            <ul>
-              <li>
-                <NavLink className={classes.links} to="/discover">
-                  Discover
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className={classes.links} to="/how-it-works">
-                  How it works?
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className={classes.uploadBtn} to="/upload">
-                  Upload
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className={classes.walletBtn} to="/connect-wallet">
-                  Connect Wallet
-                </NavLink>
-              </li>
-            </ul>
-          </nav>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li>
+              <NavLink
+                to="/discover"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Discover
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/how-it-works"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                How it works
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/upload"
+                className="uploadBtn"
+                onClick={closeMobileMenu}
+              >
+                Upload
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/connect-wallet"
+                className="walletBtn"
+                onClick={closeMobileMenu}
+              >
+                Connect Wallet
+              </NavLink>
+            </li>
+          </ul>
         </div>
-      </div>
-    </header>
+      </nav>
+    </>
   );
-};
+}
 
 export default NavigationBar;
