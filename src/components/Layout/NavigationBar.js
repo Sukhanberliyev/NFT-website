@@ -7,6 +7,7 @@ import "./NavigationBar.css";
 function NavigationBar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [open, setOpen] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -34,8 +35,13 @@ function NavigationBar() {
             Cryptonite
           </NavLink>
           <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+            <i
+              onClick={() => setOpen(!open)}
+              className={click ? "fas fa-times" : "fas fa-bars"}
+            />
           </div>
+          {open && <div className="backdrop" />}
+
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
               <NavLink

@@ -9,7 +9,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 1000;
   font-size: 14px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .navbar-logo {
-  color: #23262F;
+  color: #23262f;
   border-right: 1px solid #e6e8ec;
   font-weight: bold;
   justify-self: start;
@@ -62,7 +62,7 @@
 }
 
 .nav-links {
-  color: #777E90;
+  color: #777e90;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -70,7 +70,7 @@
 }
 
 .nav-links:hover {
-  color: #3772FF;
+  color: #3772ff;
 }
 .uploadBtn {
   text-decoration: none;
@@ -117,6 +117,7 @@
     position: absolute;
     top: 80px;
     left: -100%;
+    z-index: 100;
     transition: all 0.5s ease;
     padding: 20px 32px 20px 32px;
     background: #e6e8ec;
@@ -125,10 +126,23 @@
   .nav-menu.active {
     background: #e6e8ec;
     width: 300px;
+    height: 100vh;
     left: 0;
+    top: 80px;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 100;
   }
+  .backdrop {
+    position: absolute;
+    top: 80px;
+    /* right: 0px; */
+    /* left: 300px; */
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.603);
+  }
+
   li {
     margin: 20px 0px;
   }
@@ -137,7 +151,6 @@
     padding: 10px 0px;
     display: table;
   }
-
 
   .navbar-logo {
     position: absolute;
