@@ -10,8 +10,11 @@ function NavigationBar() {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
 
+  const closeMenuHandler = () => {
+    setClick(false);
+    setOpen(false);
+  };
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -30,7 +33,7 @@ function NavigationBar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <NavLink to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <NavLink to="/" className="navbar-logo" onClick={closeMenuHandler}>
             <img src={logo} alt="" />
             Cryptonite
           </NavLink>
@@ -40,14 +43,13 @@ function NavigationBar() {
               className={click ? "fas fa-times" : "fas fa-bars"}
             />
           </div>
-          {open && <div className="backdrop" />}
-
+          {open && <div className="backdrop" onClick={closeMenuHandler} />}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li>
               <NavLink
                 to="/discover"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={closeMenuHandler}
               >
                 Discover
               </NavLink>
@@ -56,7 +58,7 @@ function NavigationBar() {
               <NavLink
                 to="/how-it-works"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={closeMenuHandler}
               >
                 How it works
               </NavLink>
@@ -65,7 +67,7 @@ function NavigationBar() {
               <NavLink
                 to="/upload"
                 className="uploadBtn"
-                onClick={closeMobileMenu}
+                onClick={closeMenuHandler}
               >
                 Upload
               </NavLink>
@@ -74,7 +76,7 @@ function NavigationBar() {
               <NavLink
                 to="/connect-wallet"
                 className="walletBtn"
-                onClick={closeMobileMenu}
+                onClick={closeMenuHandler}
               >
                 Connect Wallet
               </NavLink>
