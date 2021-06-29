@@ -166,7 +166,7 @@ li {
   .nav-links {
     color: #000;
     font-size: 16px;
-    padding: 20px 0px 15px 25px;
+    padding: 18px 0px 18px 25px;
     display: table;
     margin: 0px;
   }
@@ -180,13 +180,14 @@ li {
   .uploadBtn {
     justify-content: flex-start;
     background-color: #fff;
+    padding: 18px 24px;
     font-size: 16px;
     color: #000;
     border-radius: 0px;
   }
   .walletBtn {
     justify-content: flex-start;
-    padding: 15px 24px;
+    padding: 18px 24px;
     color: #23262f;
     border: none;
     font-size: 16px;
