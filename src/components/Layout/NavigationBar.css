@@ -50,11 +50,11 @@
   margin-right: 2rem;
 }
 
-/* li {
+li {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+}
 .nav-item {
   display: flex;
   justify-content: center;
@@ -64,6 +64,7 @@
 .nav-links {
   color: #777e90;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
@@ -82,6 +83,10 @@
   color: #fff;
   border-radius: 20px;
 }
+.uploadBtn:hover {
+  background-color: #3764ce;
+  color: #fff;
+}
 .walletBtn {
   text-decoration: none;
   display: flex;
@@ -92,6 +97,10 @@
   color: #23262f;
   border: 1px solid #e6e8ec;
   border-radius: 20px;
+}
+.walletBtn:hover {
+  background-color: #3772ff;
+  color: #fff;
 }
 
 .fa-bars {
@@ -119,7 +128,7 @@
     left: -100%;
     z-index: 100;
     transition: all 0.5s ease;
-    padding: 20px 32px 20px 32px;
+    padding: 0px;
     background: #fff;
   }
 
@@ -151,19 +160,37 @@
   }
 
   li {
-    margin: 20px 0px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #e6e8ec;
   }
   .nav-links {
-    font-size: 24px;
-    padding: 10px 0px;
+    color: #000;
+    font-size: 16px;
+    padding: 20px 0px 15px 25px;
     display: table;
+    margin: 0px;
   }
 
   .navbar-logo {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
-    transform: translate(25%, 50%);
+    border: none;
+  }
+  .uploadBtn {
+    justify-content: flex-start;
+    background-color: #fff;
+    font-size: 16px;
+    color: #000;
+    border-radius: 0px;
+  }
+  .walletBtn {
+    justify-content: flex-start;
+    padding: 15px 24px;
+    color: #23262f;
+    border: none;
+    font-size: 16px;
+    border-radius: 0px;
   }
 
   .menu-icon {
