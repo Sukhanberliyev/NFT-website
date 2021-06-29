@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Fragment } from "react";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const Home = () => {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
-  )
-}
+    <Fragment>
+      <HeroSection />
+    </Fragment>
+  );
+};
 
-export default Home
+export default Home;
