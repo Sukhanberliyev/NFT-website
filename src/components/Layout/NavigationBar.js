@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
@@ -7,6 +7,20 @@ import "./NavigationBar.css";
 function NavigationBar() {
   const [click, setClick] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const navBarHandler = () => {
+    if (window.innerWidth >= 768) {
+      setOpen(false);
+      setClick(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", navBarHandler);
+    return (()=>window.removeEventListener("resize", navBarHandler));
+  }, []);
+
+  
 
   const handleClick = () => setClick(!click);
 
