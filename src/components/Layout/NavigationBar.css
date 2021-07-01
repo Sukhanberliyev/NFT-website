@@ -15,10 +15,12 @@
 
 .navbar-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 1280px;
   width: 100%;
+  margin: 0px auto;
+  padding: 0px 80px;
 }
 
 .navbar-logo {
@@ -33,6 +35,7 @@
   font-size: 26px;
   display: flex;
   align-items: center;
+  margin: 0px;
 }
 .navbar-logo img {
   width: 40px;
@@ -176,6 +179,7 @@ li {
     top: 20px;
     left: 0;
     border: none;
+    margin: 0px 0px 0px 20px;
   }
   .uploadBtn {
     justify-content: flex-start;

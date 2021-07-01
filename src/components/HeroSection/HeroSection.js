@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
 import classes from "./HeroSection.module.css";
+import HeroItem from "./HeroItem";
 
 const HeroSection = () => {
   const settings = {
@@ -17,6 +18,7 @@ const HeroSection = () => {
     slidesToShow: 1,
     arrows: true,
     slidesToScroll: 1,
+    className: "slides",
   };
 
   return (
@@ -30,15 +32,8 @@ const HeroSection = () => {
           </div>
           <div className={classes.mainBottom}>
             <Slider {...settings} className={classes.slides}>
-              <div>
-                <h1>1</h1>
-              </div>
-              <div>
-                <h1>2</h1>
-              </div>
-              <div>
-                <h1>3</h1>
-              </div>
+              <HeroItem />
+              <HeroItem />
             </Slider>
           </div>
         </main>
