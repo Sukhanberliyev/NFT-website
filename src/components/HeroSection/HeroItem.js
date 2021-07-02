@@ -7,6 +7,8 @@ import { faExpand } from "@fortawesome/free-solid-svg-icons";
 
 import classes from "./HeroItem.module.css";
 import kryptonite from "../../assets/images/kryptonite.jpeg";
+import avatar from "../../assets/avatars/elize.png"
+import eth from "../../assets/avatars/eth.png"
 
 const HeroItem = () => {
   return (
@@ -32,8 +34,24 @@ const HeroItem = () => {
             </div>
           </div>
         </div>
-        <div className="mainDetails">
-          <h2>Hello World</h2>
+        <div className={classes.mainDetails}>
+          <h1>the creator network®</h1>
+          <ul>
+            <li className={classes.mainItem}>
+              <img className={classes.avatar} src={avatar} alt="avatar" />
+              <div className={classes.description}>
+                <p className={classes.mainCategory}>Creator</p>
+                <p className={classes.mainText}>Fur Elize</p>
+              </div>
+            </li>
+            <li className={classes.mainItem}>
+              <img className={classes.avatar} src={eth} alt="cryptocurrency" />
+              <div className={classes.description}>
+                <p className={classes.mainCategory}>Instant price</p>
+                <p className={classes.mainText}>3.5 ETH</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </Fragment>
