@@ -51,6 +51,7 @@
   width: 60vw;
   justify-content: end;
   margin-right: 2rem;
+  margin-bottom: 0px;
 }
 
 li {
@@ -84,10 +85,10 @@ li {
   padding: 15px 24px;
   background-color: #3772ff;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .uploadBtn:hover {
-  background-color: #3764ce;
+  background-color: #044eff;
   color: #fff;
 }
 .walletBtn {
@@ -99,7 +100,7 @@ li {
   background-color: #fff;
   color: #23262f;
   border: 1px solid #e6e8ec;
-  border-radius: 20px;
+  border-radius: 50px;
 }
 .walletBtn:hover {
   background-color: #3772ff;
