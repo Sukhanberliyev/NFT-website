@@ -17,10 +17,8 @@ function NavigationBar() {
 
   useEffect(() => {
     window.addEventListener("resize", navBarHandler);
-    return (()=>window.removeEventListener("resize", navBarHandler));
+    return () => window.removeEventListener("resize", navBarHandler);
   }, []);
-
-  
 
   const handleClick = () => setClick(!click);
 
@@ -45,7 +43,7 @@ function NavigationBar() {
           </div>
           {open && <div className="backdrop" onClick={closeMenuHandler} />}
           <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
+            <li className="nav-item">
               <NavLink
                 to="/discover"
                 className="nav-links"
@@ -54,7 +52,7 @@ function NavigationBar() {
                 Discover
               </NavLink>
             </li>
-            <li>
+            <li className="nav-item">
               <NavLink
                 to="/how-it-works"
                 className="nav-links"
@@ -63,7 +61,7 @@ function NavigationBar() {
                 How it works
               </NavLink>
             </li>
-            <li>
+            <li className="nav-item">
               <NavLink
                 to="/upload"
                 className="uploadBtn"
@@ -72,7 +70,7 @@ function NavigationBar() {
                 Upload
               </NavLink>
             </li>
-            <li>
+            <li className="nav-item">
               <NavLink
                 to="/connect-wallet"
                 className="walletBtn"

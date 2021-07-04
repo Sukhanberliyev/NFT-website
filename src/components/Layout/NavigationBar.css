@@ -54,11 +54,7 @@
   margin-bottom: 0px;
 }
 
-li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .nav-item {
   display: flex;
   justify-content: center;
@@ -105,6 +101,7 @@ li {
 .walletBtn:hover {
   background-color: #3772ff;
   color: #fff;
+  border: 1px solid #3772ff;
 }
 
 .fa-bars {
@@ -163,7 +160,7 @@ li {
     }
   }
 
-  li {
+  .nav-item {
     justify-content: flex-start;
     border-bottom: 1px solid #e6e8ec;
   }

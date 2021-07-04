@@ -4,3 +4,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 1024px) {
+  .mainRow {
+    display: block;
+  }
+}

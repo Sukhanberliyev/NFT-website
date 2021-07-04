@@ -56,3 +56,13 @@
   line-height: 1.5;
   font-weight: 500;
 }
+
+@media (max-width: 1024px) {
+  .player {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .playerPreview img {
+    max-width: none;
+  }
+}
