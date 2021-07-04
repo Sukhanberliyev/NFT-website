@@ -4,9 +4,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import classes from "./HeroSection.module.css";
+import "./ReactSlick.css"
 import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
-import classes from "./HeroSection.module.css";
+
 import HeroItem from "./HeroItem";
 
 const HeroSection = () => {
@@ -18,7 +20,6 @@ const HeroSection = () => {
     slidesToShow: 1,
     arrows: true,
     slidesToScroll: 1,
-    className: "slides",
   };
 
   return (
@@ -30,12 +31,12 @@ const HeroSection = () => {
             <h3>The new creative economy</h3>
             <OutlineButton>Start your search</OutlineButton>
           </div>
-          <div className={classes.mainBottom}>
-            <Slider {...settings} className={classes.slides}>
+          {/* <div className={classes.mainBottom}> */}
+            <Slider {...settings}>
               <HeroItem />
               <HeroItem />
             </Slider>
-          </div>
+          {/* </div> */}
         </main>
       </Container>
     </section>

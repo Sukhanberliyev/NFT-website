@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import HeroDetails from "./HeroDetails";
 
 
@@ -9,12 +9,10 @@ import HeroPlayer from "./HeroPlayer";
 
 const HeroItem = () => {
   return (
-    <Fragment>
       <div className={classes.mainRow}>
         <HeroPlayer />
         <HeroDetails />
       </div>
-    </Fragment>
   );
 };
 

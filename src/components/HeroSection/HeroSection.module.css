@@ -22,6 +22,7 @@
   letter-spacing: -.01em;
   margin-bottom: 24px;
 }
+ 
 @media (max-width: 768px) {
   .main {
     padding: 64px 0px;
@@ -33,6 +34,9 @@
 
 /* Main Bottom */
 
-.slides {
- /* text-align: center; */
+.slick-slides.slick-slide {
+  margin: 0 10px;
+}
+.slick-slides.slick-list {
+  margin: 0 -10px;
 }
