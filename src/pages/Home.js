@@ -3,9 +3,11 @@ import HeroSection from "../components/HeroSection/HeroSection";
 
 // DUMMY DATA which should be removed in the future
 import nftImage1 from "../assets/images/nftImage1.jpg";
-import enjoyNeon from "../assets/images/enjoy.jpg";
+import nftImage2 from "../assets/images/nftImage2.jpg";
+import nftImage3 from "../assets/images/nftImage3.jpg";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png"
+import creatorImg3 from "../assets/avatars/creator3.png"
 
 const DUMMY_HERO_SECTION = [
   {
@@ -20,13 +22,23 @@ const DUMMY_HERO_SECTION = [
   },
   {
     id: "h1",
-    nftImage: enjoyNeon,
+    nftImage: nftImage2,
     title: "enjoy the moment®",
     creatorImg: creatorImg2 ,
     creatorName: "Joseph West",
-    instantPrice: "2.9 ETH",
+    instantPrice: "0.9 ETH",
     currentBid: "0.9 ETH",
     realPrice: "$1,950.23",
+  },
+  {
+    id: "h1",
+    nftImage: nftImage3,
+    title: "enjoy the moment®",
+    creatorImg: creatorImg3 ,
+    creatorName: "Joe Snow",
+    instantPrice: "1 ETH",
+    currentBid: "0.83 ETH",
+    realPrice: "$1,890.78",
   },
 ];
 
