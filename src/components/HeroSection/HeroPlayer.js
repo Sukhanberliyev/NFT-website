@@ -7,13 +7,13 @@ import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 import { faExpand } from "@fortawesome/free-solid-svg-icons";
 import classes from "./HeroPlayer.module.css"
 
-import kryptonite from "../../assets/images/kryptonite.jpeg";
+// import kryptonite from "../../assets/images/kryptonite.jpeg";
 
-const HeroPlayer = () => {
+const HeroPlayer = (props) => {
   return (
     <div className={classes.player}>
       <div className={classes.playerPreview}>
-        <img src={kryptonite} alt="hero" />
+        <img src={props.nftImage} alt="hero" />
       </div>
       <div className={classes.playerControl}>
         <div className={classes.playerBtn}>

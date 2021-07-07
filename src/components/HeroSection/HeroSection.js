@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import classes from "./HeroSection.module.css";
-import "./ReactSlick.css"
+import "./ReactSlick.css";
 import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
 
 import HeroItem from "./HeroItem";
 
-const HeroSection = () => {
+const HeroSection = (props) => {
   const settings = {
     dots: true,
     // fade: true,
@@ -31,12 +31,21 @@ const HeroSection = () => {
             <h3>The new creative economy</h3>
             <OutlineButton>Start your search</OutlineButton>
           </div>
-          {/* <div className={classes.mainBottom}> */}
-            <Slider {...settings}>
-              <HeroItem />
-              <HeroItem />
-            </Slider>
-          {/* </div> */}
+          <Slider {...settings}>
+            {props.nfts.map((nft) => (
+              <HeroItem
+                key={nft.id}
+                id={nft.id}
+                nftImage={nft.nftImage}
+                title={nft.title}
+                creatorImg={nft.creatorImg}
+                creatorName={nft.creatorName}
+                instantPrice={nft.instantPrice}
+                currentBid={nft.currentBid}
+                realPrice={nft.realPrice}
+              />
+            ))}
+          </Slider>
         </main>
       </Container>
     </section>

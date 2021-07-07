@@ -9,3 +9,208 @@
     display: block;
   }
 }
+
+/* Hero Player */
+
+.player {
+  position: relative;
+}
+.icon {
+  color: #777e90;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #000;
+}
+.playerPreview img {
+  border-radius: 16px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 800px;
+  height: 100%;
+}
+.playerControl {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  z-index: 3px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  background-color: #fcfcfd;
+}
+.playerBtn {
+  margin-right: 25px;
+}
+.line {
+  position: relative;
+  flex-grow: 1;
+  height: 8px;
+  margin-right: 24px;
+  background: #e6e8ec;
+  border-radius: 4px;
+  margin-right: 24px;
+}
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #3772ff;
+  width: 20%;
+}
+.time {
+  margin-right: 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .player {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .playerPreview img {
+    max-width: none;
+  }
+}
+
+/* Hero Details */
+
+.mainDetails {
+  display: block;
+  width: 352px;
+  margin-left: 128px;
+  padding-bottom: 80px;
+  flex-shrink: 0;
+}
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.items {
+  display: flex;
+  margin: 0 -16px 40px;
+}
+.mainItem {
+  display: flex;
+  align-items: center;
+  flex: 0 0 calc(50% - 32px);
+  width: calc(50% - 32px);
+  margin: 0 16px;
+}
+.avatar {
+  margin-right: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.description {
+  flex-grow: 1;
+}
+.mainCategory {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+.mainText {
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Timer */
+
+.mainWrap {
+  margin-bottom: 40px;
+  padding: 30px 16px;
+  box-shadow: 0px 64px 64px -48px rgb(31 47 70 / 12%);
+  border: 2px solid #e6e8ec;
+  border-radius: 24px;
+  text-align: center;
+}
+.mainInfo {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.mainCurrency {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+}
+.mainPrice {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #777e90;
+}
+.mainTimer {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 64px;
+}
+.mainNumber {
+  font-size: 32px;
+  font-weight: 500;
+}
+.mainTime {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #777e90;
+}
+
+/* Buttons */
+.mainBtns {
+  display: flex;
+  flex-direction: column;
+}
+.extraMargin {
+  margin-bottom: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 1180px) {
+  .mainDetails {
+    width: 304px;
+    margin-left: 32px;
+    padding-bottom: 64px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .mainWrap {
+    margin-bottom: 32px;
+    padding: 24px 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .mainDetails {
+    width: 100%;
+    margin: 48px 0 0;
+    padding-bottom: 80px;
+  }
+}

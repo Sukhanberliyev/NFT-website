@@ -29,6 +29,7 @@ const HeroDetails = () => {
       setSeconds(60 - 1);
     }
   }, [seconds, minutes, hours]);
+
   return (
     <div className={classes.mainDetails}>
       <h1>the creator network®</h1>
