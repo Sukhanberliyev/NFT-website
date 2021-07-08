@@ -8,6 +8,7 @@ import nftImage3 from "../assets/images/nftImage3.jpg";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png"
 import creatorImg3 from "../assets/avatars/creator3.png"
+import SecondHero from "../components/SecondHero/SecondHero";
 
 const DUMMY_HERO_SECTION = [
   {
@@ -46,6 +47,7 @@ const Home = () => {
   return (
     <Fragment>
       <HeroSection nfts={DUMMY_HERO_SECTION} />
+      <SecondHero />
     </Fragment>
   );
 };

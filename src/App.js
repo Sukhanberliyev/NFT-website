@@ -5,6 +5,7 @@ import Discover from "./pages/Discover";
 import HowItWorks from "./pages/HowItWorks";
 import Upload from "./pages/Upload";
 import ConnectWallet from "./pages/ConnectWallet";
+import ItemDetails from "./pages/ItemDetails";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/discover" exact>
           <Discover />
+        </Route>
+        <Route path="/discover:itemId" exact>
+          <ItemDetails />
         </Route>
         <Route path="/how-it-works" exact>
           <HowItWorks />
