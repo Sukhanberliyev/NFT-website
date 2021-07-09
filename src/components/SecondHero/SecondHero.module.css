@@ -1,7 +1,3 @@
 .secondHero {
   display: flex;
-  flex-grow: 1;
-  margin-right: 32px;
-  padding-right: 32px;
-  border-right: 1px solid #E6E8EC;
 }
