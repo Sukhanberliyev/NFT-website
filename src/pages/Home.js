@@ -2,20 +2,20 @@ import React, { Fragment } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 
 // DUMMY DATA which should be removed in the future
-import nftImage1 from "../assets/images/nftImage1.jpg";
-import nftImage2 from "../assets/images/nftImage2.jpg";
-import nftImage3 from "../assets/images/nftImage3.jpg";
+import nftImage22 from "../assets/images/nftImage22.png";
+import nftImage26 from "../assets/images/nftImage26.png";
+import nftImage19 from "../assets/images/nftImage19.png";
 import creatorImg from "../assets/avatars/creator1.png";
-import creatorImg2 from "../assets/avatars/creator2.png"
-import creatorImg3 from "../assets/avatars/creator3.png"
+import creatorImg2 from "../assets/avatars/creator2.png";
+import creatorImg3 from "../assets/avatars/creator3.png";
 import SecondHero from "../components/SecondHero/SecondHero";
 
 const DUMMY_HERO_SECTION = [
   {
     id: "h1",
-    nftImage: nftImage1,
+    nftImage: nftImage22,
     title: "the creator network®",
-    creatorImg: creatorImg ,
+    creatorImg: creatorImg,
     creatorName: "Fur Elize",
     instantPrice: "3.5 ETH",
     currentBid: "1.00 ETH",
@@ -23,9 +23,9 @@ const DUMMY_HERO_SECTION = [
   },
   {
     id: "h1",
-    nftImage: nftImage2,
+    nftImage: nftImage26,
     title: "enjoy the moment®",
-    creatorImg: creatorImg2 ,
+    creatorImg: creatorImg2,
     creatorName: "Joseph West",
     instantPrice: "0.9 ETH",
     currentBid: "0.9 ETH",
@@ -33,9 +33,9 @@ const DUMMY_HERO_SECTION = [
   },
   {
     id: "h1",
-    nftImage: nftImage3,
+    nftImage: nftImage19,
     title: "enjoy the moment®",
-    creatorImg: creatorImg3 ,
+    creatorImg: creatorImg3,
     creatorName: "Joe Snow",
     instantPrice: "1 ETH",
     currentBid: "0.83 ETH",

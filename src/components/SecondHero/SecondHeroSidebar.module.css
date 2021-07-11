@@ -1,0 +1,49 @@
+.sidebar {
+  flex-shrink: 0;
+  width: 224px;
+}
+
+.info {
+  font-size: 12px;
+  line-height: 1.66667;
+  font-weight: 600;
+  color: #777E90;
+}
+
+.creatorList {
+  list-style: none;
+}
+.creators {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #E6E8EC;
+}
+.avatar {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #23262F;
+  border: 2px solid #E6E8EC;
+  color: #fff;
+  border-radius: 50%;
+}
