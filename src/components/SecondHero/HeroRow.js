@@ -17,6 +17,7 @@ import creator18 from "../../assets/avatars/creator18.png";
 import creator9 from "../../assets/avatars/creator9.png";
 import creator23 from "../../assets/avatars/creator23.png";
 import creator24 from "../../assets/avatars/creator24.png";
+
 const HeroRow = () => {
   return (
     <div className={classes.secondHeroRow}>

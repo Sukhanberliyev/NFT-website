@@ -1,3 +1,10 @@
 .secondHero {
   display: flex;
 }
+/* Mobile */
+
+@media (max-width: 1339px) {
+  .secondHero {
+    display: block;
+  }
+}

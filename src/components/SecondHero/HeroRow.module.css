@@ -75,6 +75,20 @@ img {
   color: #353945;
 }
 
+/* Mobile */
+@media (max-width: 1339px) {
+  .secondHeroRow {
+    margin-right: 0;
+    padding: 0;
+    border: none;
+  }
+}
+@media (max-width: 1024px) {
+  .columnOne {
+    padding: 0;
+  }
+}
+
 p {
   font-family: "Poppins", sans-serif;
 }
@@ -146,4 +160,8 @@ p {
   font-weight: 500;
 }
 
-
+@media (max-width: 1024px) {
+  .columnTwo {
+    display: none;
+  }
+}
