@@ -56,7 +56,9 @@ const SecondHeroSidebar = () => {
           </div>
         </li>
       </ul>
-      <OutlineButton>Discover more</OutlineButton>
+      <div className={classes.btn}>
+        <OutlineButton>Discover more</OutlineButton>
+      </div>
     </div>
   );
 };

@@ -9,6 +9,7 @@ import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
 import SecondHero from "../components/SecondHero/SecondHero";
+import Popular from "../components/Popular/Popular";
 
 const DUMMY_HERO_SECTION = [
   {
@@ -48,6 +49,7 @@ const Home = () => {
     <Fragment>
       <HeroSection nfts={DUMMY_HERO_SECTION} />
       <SecondHero />
+      <Popular />
     </Fragment>
   );
 };

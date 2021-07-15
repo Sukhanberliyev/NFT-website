@@ -81,6 +81,9 @@
     margin: 0 12px;
     padding: 0;
   }
+  .btn {
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .info {
