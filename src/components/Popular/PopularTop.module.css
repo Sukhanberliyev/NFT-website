@@ -64,3 +64,14 @@
   line-height: 1.2;
   color: #777E90;
 }
+
+.field {
+  max-width: 256px;
+}
+.label {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  color: #B1B5C3;
+}

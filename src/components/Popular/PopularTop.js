@@ -1,7 +1,26 @@
 import React from "react";
+import Dropdown from "../UI/Dropdown";
+import DropdownTwo from "../UI/Dropdown";
 
 // importing css
 import classes from "./PopularTop.module.css";
+
+// DUMMY DATA for dropdown
+
+const DUMMY_ITEMS = [
+  {
+    id: 1,
+    value: "Pulp fiction",
+  },
+  {
+    id: 2,
+    value: "The presitge",
+  },
+  {
+    id: 3,
+    value: "The godfather",
+  },
+];
 
 const PopularTop = () => {
   return (
@@ -16,7 +35,11 @@ const PopularTop = () => {
           </ul>
         </div>
       </div>
-      <div className={classes.field}></div>
+      <div className={classes.field}>
+        <p className={classes.label}>TIMEFRAME</p>
+        {/* <Dropdown title="Select Movie" items={DUMMY_ITEMS} /> */}
+        <DropdownTwo />
+      </div>
     </div>
   );
 };
