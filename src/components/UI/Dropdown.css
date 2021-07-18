@@ -24,16 +24,14 @@
   top: 110%;
   left: 0;
   right: 0;
-  display: flex;
-  flex-direction: column;
   border: 2px solid #E6E8EC;
   background-color: #FCFCFD;
   font-size: 14px;
-  width: 100%;
   border-radius: 12px;
   list-style: none;
   overflow: hidden;
   z-index: 10;
+  box-shadow: 0 4px 12px rgb(35 38 47 / 10%);
 }
 .option {
   padding: 15px;
@@ -42,6 +40,7 @@
 
 .option:hover {
   background-color: #f6f6f6;
+  color: #3772FF;
 }
 
 .selected {

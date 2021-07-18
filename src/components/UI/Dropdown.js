@@ -16,7 +16,6 @@ const DropdownTwo = () => {
   const optionClicked = (value) => () => {
     setSelection(value);
     setOpen(false);
-    console.log(setSelection);
   };
 
   return (
