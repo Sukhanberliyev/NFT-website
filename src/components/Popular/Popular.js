@@ -56,6 +56,7 @@ const Popular = () => {
         <PopularTop />
         <Slider {...settings}>
           <PopularDetails />
+          <PopularDetails />
         </Slider>
       </Container>
     </section>
