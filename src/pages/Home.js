@@ -23,7 +23,7 @@ const DUMMY_HERO_SECTION = [
     realPrice: "$2,200.18",
   },
   {
-    id: "h1",
+    id: "h2",
     nftImage: nftImage26,
     title: "enjoy the moment®",
     creatorImg: creatorImg2,
@@ -33,7 +33,7 @@ const DUMMY_HERO_SECTION = [
     realPrice: "$1,950.23",
   },
   {
-    id: "h1",
+    id: "h3",
     nftImage: nftImage19,
     title: "enjoy the moment®",
     creatorImg: creatorImg3,

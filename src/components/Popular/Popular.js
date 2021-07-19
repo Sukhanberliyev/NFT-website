@@ -13,7 +13,95 @@ import Container from "../Layout/Container";
 import PopularTop from "./PopularTop";
 import PopularDetails from "./PopularDetails";
 
-const Popular = () => {
+// importing icons
+import cup from "../../assets/icons/cup.svg";
+
+// importing creators
+import creator24 from "../../assets/avatars/creator24.png";
+const users = [
+  {
+    id: "u1",
+    svg: cup,
+    rank: "1",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u2",
+    svg: cup,
+    rank: "2",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "3",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "4",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "5",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "6",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "7",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "8",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "9",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+  {
+    id: "u1",
+    svg: cup,
+    rank: "10",
+    creatorImg: creator24,
+    name: "Billy Campbell",
+    amount: "4.1",
+  },
+];
+
+const Popular = (props) => {
   // React slick library setings
   var settings = {
     dots: true,
@@ -55,8 +143,16 @@ const Popular = () => {
       <Container>
         <PopularTop />
         <Slider {...settings}>
-          <PopularDetails />
-          <PopularDetails />
+          {users.map((user) => (
+            <PopularDetails
+              key={user.id}
+              svg={user.svg}
+              rank={user.rank}
+              creatorImg={user.creatorImg}
+              name={user.name}
+              amount={user.amount}
+            />
+          ))}
         </Slider>
       </Container>
     </section>
