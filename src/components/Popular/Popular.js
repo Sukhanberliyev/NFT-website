@@ -17,6 +17,8 @@ import PopularDetails from "./PopularDetails";
 import cup from "../../assets/icons/cup.svg";
 import ball from "../../assets/icons/ball.svg";
 import flame from "../../assets/icons/flame.svg";
+import nextArrow from "../../assets/icons/nextArrow.svg";
+import prevArrow from "../../assets/icons/prevArrow.svg";
 
 // importing creators
 import creator24 from "../../assets/avatars/creator24.png";
@@ -113,11 +115,40 @@ const users = [
   },
 ];
 
+// arrows
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <img
+      className={className}
+      style={{ ...style, display: "block", width: "30px", height: "30px" }}
+      onClick={onClick}
+      src={nextArrow}
+      alt=""
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <img
+      className={className}
+      style={{ ...style, display: "block", width: "30px", height: "30px", marginLeft: "-20px" }}
+      onClick={onClick}
+      src={prevArrow}
+      alt=""
+    />
+  );
+}
+
 const Popular = (props) => {
   // React slick library setings
   var settings = {
-    dots: true,
-    infinite: false,
+    dots: false,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    infinite: true,
     speed: 500,
     arrows: true,
     slidesToShow: 4,
