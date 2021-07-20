@@ -1,12 +1,12 @@
 import React from "react";
 
-// importing css
-import classes from "./Popular.module.css";
-
 // importing library
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
+// importing css
+import classes from "./Popular.module.css";
 
 // importing components
 import Container from "../Layout/Container";
@@ -15,89 +15,101 @@ import PopularDetails from "./PopularDetails";
 
 // importing icons
 import cup from "../../assets/icons/cup.svg";
+import ball from "../../assets/icons/ball.svg";
+import flame from "../../assets/icons/flame.svg";
 
 // importing creators
 import creator24 from "../../assets/avatars/creator24.png";
+import creator12 from "../../assets/avatars/creator12.png";
+import creator11 from "../../assets/avatars/creator11.png";
+import creator22 from "../../assets/avatars/creator22.png";
+import creator31 from "../../assets/avatars/creator31.png";
+import creator26 from "../../assets/avatars/creator26.png";
+import creator19 from "../../assets/avatars/creator19.png";
+import creator15 from "../../assets/avatars/creator15.png";
+import creator14 from "../../assets/avatars/creator14.png";
+import creator17 from "../../assets/avatars/creator17.png";
+
 const users = [
   {
     id: "u1",
     svg: cup,
     rank: "1",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator12,
+    name: "Ruby Gallagher",
+    amount: "5.1",
   },
   {
     id: "u2",
     svg: cup,
     rank: "2",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator22,
+    name: "Joseph Miller",
+    amount: "4.7",
   },
   {
-    id: "u1",
+    id: "u3",
     svg: cup,
     rank: "3",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator11,
+    name: "Ella Rose",
+    amount: "4.5",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u4",
+    svg: ball,
     rank: "4",
     creatorImg: creator24,
-    name: "Billy Campbell",
+    name: "Jayden Wattsl",
     amount: "4.1",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u5",
+    svg: ball,
     rank: "5",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator31,
+    name: "Thomas Harper",
+    amount: "3.9",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u6",
+    svg: flame,
     rank: "6",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator26,
+    name: "Megan Hayes",
+    amount: "3.3",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u7",
+    svg: flame,
     rank: "7",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator19,
+    name: "Jasmine White",
+    amount: "3",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u8",
+    svg: flame,
     rank: "8",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator15,
+    name: "Aaron Austin",
+    amount: "2.8",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u9",
+    svg: flame,
     rank: "9",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator14,
+    name: "Sarah Cooke",
+    amount: "2.5",
   },
   {
-    id: "u1",
-    svg: cup,
+    id: "u10",
+    svg: flame,
     rank: "10",
-    creatorImg: creator24,
-    name: "Billy Campbell",
-    amount: "4.1",
+    creatorImg: creator17,
+    name: "Aria Benton",
+    amount: "2.1",
   },
 ];
 

@@ -29,6 +29,9 @@
   font-size: 12px;
   font-weight: 400;
 }
+.popularRating.lessRating {
+  background-color: #39c227;
+}
 
 .popularIcon {
   margin-right: 4px;

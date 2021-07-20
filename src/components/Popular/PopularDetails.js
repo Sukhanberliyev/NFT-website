@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
 // importing icons
-import addBtn from "../../assets/icons/addBtn.svg"
-import link from "../../assets/icons/link.svg"
-import diamond from "../../assets/icons/diamond.svg"
+import addBtn from "../../assets/icons/addBtn.svg";
+import link from "../../assets/icons/link.svg";
+import diamond from "../../assets/icons/diamond.svg";
 
-
-import classes from "./PopularDetails.module.css"
+import classes from "./PopularDetails.module.css";
 const PopularDetails = (props) => {
+
+
   return (
     <div className={classes.slickList}>
       <div className={classes.popularItem}>
@@ -36,12 +37,14 @@ const PopularDetails = (props) => {
               <img src={diamond} alt="" />
             </div>
           </div>
-            <p className={classes.popularName}>{props.name}</p>
-            <p className={classes.popularPrice}><span>{props.amount}</span> ETH</p>
+          <p className={classes.popularName}>{props.name}</p>
+          <p className={classes.popularPrice}>
+            <span>{props.amount}</span> ETH
+          </p>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default PopularDetails
+export default PopularDetails;
