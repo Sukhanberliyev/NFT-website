@@ -1,12 +1,14 @@
 .slickList {
-  width: 231px;
+  /* width: 231px; */
+  width: 100%;
+  padding: 0px;
 }
 
 .popularItem {
   padding: 24px;
   border-radius: 16px;
   background-color: #FCFCFD;
-  box-shadow: box-shadow .2s;
+  transition: box-shadow .2s;
 }
 .popularHead {
   display: flex;

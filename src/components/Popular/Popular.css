@@ -1,0 +1,44 @@
+.popular {
+  overflow: hidden;
+  padding: 128px 0px 268px 0px;
+  background-color: #f4f5f6;
+}
+
+/* React-Slider */
+.slick-dots {
+  bottom: -65px;
+}
+.slick-slide > div {
+  margin: 0 20px;
+}
+
+@media (max-width: 1140px) {
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .slick-slide > div {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 890px) {
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .slick-slide > div {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 700px) {
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 480px) {
+  .slick-slide > div {
+    margin: 0 20px;
+  }
+}

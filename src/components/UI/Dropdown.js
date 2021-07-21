@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
+// importing custom-hook
+import useClickOutside from "../../hooks/use-click-outside";
+
 import "./Dropdown.css";
 
 const options = ["Today", "Morning", "Dinner", "Evening"];
@@ -18,8 +21,13 @@ const DropdownTwo = () => {
     setOpen(false);
   };
 
+  // calling and custom hook which allows click outside
+  let domNode = useClickOutside(() => {
+    setOpen(false);
+  });
+
   return (
-    <div tabIndex="0" className="select">
+    <div ref={domNode} tabIndex="0" className="select">
       <div onClick={toggleHandler} className="current">
         {selection || "Today"}
         {open ? (

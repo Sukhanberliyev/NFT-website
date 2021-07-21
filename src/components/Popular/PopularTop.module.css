@@ -74,4 +74,17 @@
 }
 
 
-/* wrapper */
+/* mobile */
+
+@media (max-width: 768px) {
+  .popularTop {
+    display: block;
+    margin-bottom: 32px;
+  }
+  .popularBox {
+    margin: 0 0 16px;
+  }
+  .field {
+    max-width: 100%;
+  }
+}

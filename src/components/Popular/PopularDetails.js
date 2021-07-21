@@ -6,9 +6,9 @@ import link from "../../assets/icons/link.svg";
 import diamond from "../../assets/icons/diamond.svg";
 
 import classes from "./PopularDetails.module.css";
+
+
 const PopularDetails = (props) => {
-
-
   return (
     <div className={classes.slickList}>
       <div className={classes.popularItem}>

@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // importing css
-import classes from "./Popular.module.css";
+import "./Popular.css";
 
 // importing components
 import Container from "../Layout/Container";
@@ -30,7 +30,7 @@ import creator26 from "../../assets/avatars/creator26.png";
 import creator19 from "../../assets/avatars/creator19.png";
 import creator15 from "../../assets/avatars/creator15.png";
 import creator14 from "../../assets/avatars/creator14.png";
-import creator17 from "../../assets/avatars/creator17.png";
+
 
 const users = [
   {
@@ -62,7 +62,7 @@ const users = [
     svg: ball,
     rank: "4",
     creatorImg: creator24,
-    name: "Jayden Wattsl",
+    name: "Jayden Wattson",
     amount: "4.1",
   },
   {
@@ -105,14 +105,6 @@ const users = [
     name: "Sarah Cooke",
     amount: "2.5",
   },
-  {
-    id: "u10",
-    svg: flame,
-    rank: "10",
-    creatorImg: creator17,
-    name: "Aria Benton",
-    amount: "2.1",
-  },
 ];
 
 // arrows
@@ -121,7 +113,13 @@ function SampleNextArrow(props) {
   return (
     <img
       className={className}
-      style={{ ...style, display: "block", width: "30px", height: "30px" }}
+      style={{
+        ...style,
+        display: "block",
+        width: "30px",
+        height: "30px",
+        marginRight: "-20px",
+      }}
       onClick={onClick}
       src={nextArrow}
       alt=""
@@ -134,7 +132,13 @@ function SamplePrevArrow(props) {
   return (
     <img
       className={className}
-      style={{ ...style, display: "block", width: "30px", height: "30px", marginLeft: "-20px" }}
+      style={{
+        ...style,
+        display: "block",
+        width: "30px",
+        height: "30px",
+        marginLeft: "-20px",
+      }}
       onClick={onClick}
       src={prevArrow}
       alt=""
@@ -145,23 +149,23 @@ function SamplePrevArrow(props) {
 const Popular = (props) => {
   // React slick library setings
   var settings = {
-    dots: false,
+    dots: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     infinite: true,
     speed: 500,
     arrows: true,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
+          slidesToScroll: 2,
           dots: true,
+          arrows: false,
         },
       },
       {
@@ -170,6 +174,8 @@ const Popular = (props) => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: true,
+          arrows: false,
         },
       },
       {
@@ -177,12 +183,14 @@ const Popular = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
+          arrows: false,
         },
       },
     ],
   };
   return (
-    <section className={classes.popular}>
+    <section className="popular">
       <Container>
         <PopularTop />
         <Slider {...settings}>
