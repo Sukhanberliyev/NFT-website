@@ -54,7 +54,7 @@
   font-size: 14px;
 }
 
-.lastCreators {
+.lastCreator {
   display: flex;
   align-items: center;
   padding: 24px 0;
@@ -75,6 +75,13 @@
     margin: 0 -12px;
   }
   .creators {
+    border: none;
+    flex: 0 0 calc(25% - 24px);
+    width: calc(25% - 24px);
+    margin: 0 12px;
+    padding: 0;
+  }
+  .lastCreator {
     border: none;
     flex: 0 0 calc(25% - 24px);
     width: calc(25% - 24px);
@@ -106,6 +113,12 @@
     -webkit-overflow-scrolling: touch;
   }
   .creators {
+    flex: 0 0 224px;
+    width: 224px;
+    margin: 0;
+    padding-right: 16px;
+  }
+  .lastCreator {
     flex: 0 0 224px;
     width: 224px;
     margin: 0;

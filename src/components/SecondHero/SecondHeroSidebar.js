@@ -45,7 +45,7 @@ const SecondHeroSidebar = () => {
             <Bid> 2.456 ETH</Bid>
           </div>
         </li>
-        <li className={[classes.lastCreators]}>
+        <li className={classes.lastCreator}>
           <div className={classes.avatar}>
             <img src={creator26} alt="" />
             <div className={classes.badge}>6</div>
