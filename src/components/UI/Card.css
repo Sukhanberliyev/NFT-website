@@ -64,12 +64,15 @@
   stroke: #777E90;
   transition: all .2s;
 }
-.likeBtn:hover svg {
+.heart:hover {
   stroke: #23262F;
 }
 .heart.active {
   stroke: none;
-  fill: red;
+  fill: rgb(252, 66, 66);
+}
+.heart.active:hover {
+  stroke: none;
 }
 .cardButton {
   position: absolute;
