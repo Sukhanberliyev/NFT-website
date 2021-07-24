@@ -1,0 +1,180 @@
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardPreview {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.cardPreview img {
+  width: 100%;
+}
+.cardControl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 38, 47, 0.2);
+  border-radius: 16px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .3s;
+}
+.card:hover .cardControl {
+  visibility: visible;
+  opacity: 1;
+}
+.cardCategory {
+  background-color: #45B26B;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #FCFCFD;
+}
+
+.likeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  background-color: #FCFCFD;
+  box-shadow: 0px 8px 16px rgb(15 15 15 / 20%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heart {
+  width: 24px;
+  height: 24px;
+  stroke: #777E90;
+  transition: all .2s;
+}
+.likeBtn:hover svg {
+  stroke: #23262F;
+}
+.heart.active {
+  stroke: none;
+  fill: red;
+}
+.cardButton {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  background-color: #3772FF;
+  border-radius: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  color: #FCFCFD;
+  transition: all .2s;
+  border: none;
+}
+
+.cardButton img {
+  margin-left: 18px;
+  width: 18px;
+  height: 16px;
+  fill: #FCFCFD;
+}
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px 0px;
+  color: #23262f;
+  text-decoration: none;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+/* FIX THIS LATER (add it to cardLine class) */
+.cardMargin {
+  margin-bottom: 12px;
+}
+
+.cardLine {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cardTitle {
+  margin-right: auto;
+  padding-top: 1px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.cardUsers {
+  display: flex;
+  margin-right: auto;
+}
+
+.cardAvatar {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #fcfcfd;
+}
+.avatarMargin {
+  margin-left: -8px;
+}
+.cardAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e6e8ec;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+
+.cardStatus {
+  display: flex;
+}
+
+.cardStatus img {
+  width: 20px;
+  height: 20px;
+  margin: -2px 4px 0 0;
+}
+
+.cardStatus span {
+  font-weight: bold;
+}

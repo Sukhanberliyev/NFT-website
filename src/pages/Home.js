@@ -1,6 +1,11 @@
 import React, { Fragment } from "react";
 import HeroSection from "../components/HeroSection/HeroSection";
 
+// Importing components
+import SecondHero from "../components/SecondHero/SecondHero";
+import Popular from "../components/Popular/Popular";
+import Hot from "../components/HotBid/Hot";
+
 // DUMMY DATA which should be removed in the future
 import nftImage22 from "../assets/images/nftImage22.png";
 import nftImage26 from "../assets/images/nftImage26.png";
@@ -8,8 +13,6 @@ import nftImage19 from "../assets/images/nftImage19.png";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
-import SecondHero from "../components/SecondHero/SecondHero";
-import Popular from "../components/Popular/Popular";
 
 const DUMMY_HERO_SECTION = [
   {
@@ -50,6 +53,7 @@ const Home = () => {
       <HeroSection nfts={DUMMY_HERO_SECTION} />
       <SecondHero />
       <Popular />
+      <Hot />
     </Fragment>
   );
 };
