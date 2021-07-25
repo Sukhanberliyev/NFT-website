@@ -30,7 +30,7 @@ const Card = (props) => {
           <div className="cardCategory">PURCHASING !</div>
           <div className="likeBtn" onClick={likeButtonHandler}>
             <svg
-              className={click ? "heart" : "heart active"}
+              className={!click ? "heart" : "heart active"}
               width="44"
               height="44"
               viewBox="0 0 44 44"

@@ -13,6 +13,7 @@ import nftImage19 from "../assets/images/nftImage19.png";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
+import Collections from "../components/Collections/Collections";
 
 const DUMMY_HERO_SECTION = [
   {
@@ -54,6 +55,7 @@ const Home = () => {
       <SecondHero />
       <Popular />
       <Hot />
+      <Collections />
     </Fragment>
   );
 };
