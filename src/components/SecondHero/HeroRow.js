@@ -9,10 +9,10 @@ import Bid from "../UI/Bid";
 import OutlineButton from "../UI/OutlineButton";
 
 // importing images
-import nftImage8 from "../../assets/images/nftImage8.png";
-import nftImage15 from "../../assets/images/nftImage15.png";
-import nftImage18 from "../../assets/images/nftImage18-1.png";
-import nftImage7 from "../../assets/images/nftImage7.png";
+import nftImage21 from "../../assets/images/nftImage21.png";
+import nftImage22 from "../../assets/images/nftImage22.png";
+import nftImage25 from "../../assets/images/nftImage25.png";
+import nftImage24 from "../../assets/images/nftImage24.png";
 import creator18 from "../../assets/avatars/creator18.png";
 import creator9 from "../../assets/avatars/creator9.png";
 import creator23 from "../../assets/avatars/creator23.png";
@@ -24,7 +24,7 @@ const HeroRow = () => {
       <div className={classes.columnOne}>
         <Link className={classes.preview}>
           <div className={classes.previewImg}>
-            <img src={nftImage8} alt="nft" />
+            <img src={nftImage21} alt="nft" />
           </div>
           <div className={classes.previewDetails}>
             <div className={classes.line}>
@@ -46,7 +46,7 @@ const HeroRow = () => {
       <div className={classes.columnTwo}>
         <Link className={classes.selectionItem}>
           <div className={classes.selectionPreview}>
-            <img src={nftImage7} alt="nft" />
+            <img src={nftImage22} alt="nft" />
           </div>
           <div className={classes.selectionDescription}>
             <p className={classes.selectionTitle}>ETH never die</p>
@@ -64,7 +64,7 @@ const HeroRow = () => {
         </Link>
         <Link className={classes.selectionItem}>
           <div className={classes.selectionPreview}>
-            <img src={nftImage15} alt="nft" />
+            <img src={nftImage25} alt="nft" />
           </div>
           <div className={classes.selectionDescription}>
             <p className={classes.selectionTitle}>ETH never die</p>
@@ -80,7 +80,7 @@ const HeroRow = () => {
         </Link>
         <Link className={classes.selectionItem}>
           <div className={classes.selectionPreview}>
-            <img src={nftImage18} alt="nft" />
+            <img src={nftImage24} alt="nft" />
           </div>
           <div className={classes.selectionDescription}>
             <p className={classes.selectionTitle}>ETH never die</p>

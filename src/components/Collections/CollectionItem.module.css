@@ -1,0 +1,78 @@
+
+.collectionItem {
+  width: 384px;
+  text-decoration: none;
+}
+
+.collectionGallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px -4px 16px;
+}
+
+.collectionPreview:first-child {
+  flex: 0 0 calc(100% - 8px);
+  width: calc(100% - 8px);
+  margin: 8px 4px 0;
+}
+.collectionPreview {
+  flex: 0 0 calc(33.333% - 8px);
+  width: calc(33.333% - 8px);
+  margin: 8px 4px 0;
+}
+
+.collectionPreview img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.collectionSubTitle {
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #23262f;
+  transition: color 0.2s;
+}
+
+.collectionLine {
+  display: flex;
+  align-items: center;
+}
+.collectionUser {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  color: #353945;
+}
+
+.collectionAvatar {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.collectionAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.collectionAuthor span {
+  font-weight: 500;
+}
+
+.collectionCounter {
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 2px #e6e8ec;
+  color: #777e90;
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 700;
+}

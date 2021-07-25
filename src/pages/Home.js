@@ -7,9 +7,9 @@ import Popular from "../components/Popular/Popular";
 import Hot from "../components/HotBid/Hot";
 
 // DUMMY DATA which should be removed in the future
-import nftImage22 from "../assets/images/nftImage22.png";
-import nftImage26 from "../assets/images/nftImage26.png";
-import nftImage19 from "../assets/images/nftImage19.png";
+import nftImage10 from "../assets/images/nftImage10.png";
+import nftImage11 from "../assets/images/nftImage11.png";
+import nftImage12 from "../assets/images/nftImage12.png";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
@@ -18,7 +18,7 @@ import Collections from "../components/Collections/Collections";
 const DUMMY_HERO_SECTION = [
   {
     id: "h1",
-    nftImage: nftImage22,
+    nftImage: nftImage10,
     title: "the creator network®",
     creatorImg: creatorImg,
     creatorName: "Fur Elize",
@@ -28,7 +28,7 @@ const DUMMY_HERO_SECTION = [
   },
   {
     id: "h2",
-    nftImage: nftImage26,
+    nftImage: nftImage11,
     title: "enjoy the moment®",
     creatorImg: creatorImg2,
     creatorName: "Joseph West",
@@ -38,7 +38,7 @@ const DUMMY_HERO_SECTION = [
   },
   {
     id: "h3",
-    nftImage: nftImage19,
+    nftImage: nftImage12,
     title: "enjoy the moment®",
     creatorImg: creatorImg3,
     creatorName: "Joe Snow",
