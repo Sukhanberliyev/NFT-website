@@ -5,6 +5,8 @@ import HeroSection from "../components/HeroSection/HeroSection";
 import SecondHero from "../components/SecondHero/SecondHero";
 import Popular from "../components/Popular/Popular";
 import Hot from "../components/HotBid/Hot";
+import Collections from "../components/Collections/Collections";
+import Description from "../components/Description/Description";
 
 // DUMMY DATA which should be removed in the future
 import nftImage10 from "../assets/images/nftImage10.png";
@@ -13,7 +15,7 @@ import nftImage12 from "../assets/images/nftImage12.png";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
-import Collections from "../components/Collections/Collections";
+
 
 const DUMMY_HERO_SECTION = [
   {
@@ -56,6 +58,7 @@ const Home = () => {
       <Popular />
       <Hot />
       <Collections />
+      <Description />
     </Fragment>
   );
 };
