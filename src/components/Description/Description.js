@@ -8,12 +8,12 @@ import classes from "./Description.module.css";
 
 const Description = () => {
   return (
-    <section>
+    <section className={classes.description}>
       <Container>
         <div className={classes.descriptionWrap}>
-          <p className={classes.descriptionStage}>Save your time with Stacks</p>
+          <p className={classes.descriptionStage}>SAVE YOUR TIME WITH STACKS</p>
           <h1 className={classes.descriptionTitle}>
-            Save your time with Stacks
+            Earn free crypto with Cryptonite
           </h1>
           <p className={classes.descriptionText}>
             A creative agency that lead and inspire
