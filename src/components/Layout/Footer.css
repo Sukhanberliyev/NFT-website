@@ -1,0 +1,150 @@
+footer {
+  border-top: 1px solid #e6e8ec;
+}
+
+.footerRow {
+  display: flex;
+  padding: 80px 0px 48px;
+  border-bottom: 1px solid #e6e8ec;
+}
+
+.footerColumn {
+  flex-grow: 1;
+  padding-right: 32px;
+}
+.footerColumn:first-child {
+  flex-grow: 1;
+  padding-right: 32px;
+}
+.footerColumn:nth-child(2) {
+  display: flex;
+  flex-shrink: 0;
+  width: 352px;
+}
+.footerColumn:nth-child(3) {
+  flex-shrink: 0;
+  width: 384px;
+  padding-left: 32px;
+}
+
+.footerLogo {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footerInfo {
+  max-width: 256px;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: -0.01em;
+}
+
+.footerMode {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.footerDetails {
+  margin-right: 16px;
+  font-size: 12px;
+  line-height: 1.66667;
+}
+
+.footerGroup {
+  flex: 0% 0% 50%;
+}
+.footerGroup:first-child {
+  padding-right: 16px;
+}
+.footerGroup:nth-child(2) {
+  padding-left: 16px;
+}
+
+.footerHead {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .footerBody {
+    display: flex !important;
+  }
+}
+
+.footerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerLink {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 700;
+  color: #777e90;
+  transition: color 0.2s;
+}
+
+.footerLink:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.footerCategory {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.footerText {
+  margin-bottom: 24px;
+}
+
+.subscription {
+  position: relative;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  -webkit-appearance: none;
+}
+
+.subscriptionInput {
+  width: 100%;
+  height: 48px;
+  padding: 0 48px 0 14px;
+  border-radius: 24px;
+  background: none;
+  border: 2px solid #e6e8ec;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.71429;
+  color: #23262f;
+  transition: border-color 0.2s;
+}
+
+
+.subscriptionBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #3772ff;
+  transition: background 0.2s;
+}
+
+.subscriptionBtn .icon {
+  width: 14px;
+  height: 14px;
+  fill: #fcfcfd;
+}
