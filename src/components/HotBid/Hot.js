@@ -53,7 +53,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage32,
-    title: "Count Nike",
+    title: "Space Park",
     bid: "2.45",
     creator1: creator24,
     creator2: creator12,
@@ -64,7 +64,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage27,
-    title: "Gladiators",
+    title: "Monstroo",
     bid: "1.93",
     creator1: creator1,
     creator2: creator2,
@@ -75,7 +75,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage28,
-    title: "Touch the sky",
+    title: "Norway",
     bid: "2.23",
     creator1: creator4,
     creator2: creator5,
@@ -86,7 +86,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage29,
-    title: "Digital Heaven",
+    title: "Digital Blade",
     bid: "1.89",
     creator1: creator7,
     creator2: creator8,
@@ -97,7 +97,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage30,
-    title: "Digital World",
+    title: "Waterflamefall",
     bid: "1.77",
     creator1: creator2,
     creator2: creator3,
@@ -108,7 +108,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage31,
-    title: "Ethereum never die",
+    title: "Ethereuminisation",
     bid: "1.61",
     creator1: creator15,
     creator2: creator16,
@@ -119,7 +119,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage33,
-    title: "3D mother",
+    title: "Toxic flamingos",
     bid: "1.55",
     creator1: creator7,
     creator2: creator2,
@@ -130,7 +130,7 @@ const hotNfts = [
   {
     id: "h1",
     mainNft: nftImage34,
-    title: "Perfect Rectangle",
+    title: "Tauren Valley",
     bid: "1.01",
     creator1: creator6,
     creator2: creator3,

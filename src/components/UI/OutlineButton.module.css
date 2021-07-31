@@ -1,5 +1,6 @@
 .button {
   font: inherit;
+  height: 100%;
   border: 1px solid #e6e8ec;
   background: #fff;
   color: #23262f;

@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // importing css
-import "./Footer.css"
+import "./Footer.css";
 // importing components
 import Container from "./Container";
+
+// importing assests
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -13,7 +16,8 @@ const Footer = () => {
         <div className="footerRow">
           <div className="footerColumn">
             <Link className="footerLogo">
-              <img src="" alt="logo" />
+              <img src={logo} alt="logo" />
+              <p>Cryptonite</p>
             </Link>
             <p className="footerInfo">The New Creative Economy</p>
             <div className="footerMode">
@@ -49,17 +53,31 @@ const Footer = () => {
           </div>
           <div className="footerColumn">
             <p className="footerCategory">Join Newsletter</p>
-            <p className="footerText">Subscribe our newsletter to get more free design course and resource</p>
+            <p className="footerText">
+              Subscribe our newsletter to get more free design course and
+              resource
+            </p>
             <form className="subscription" action="">
-              <input className="subscriptionInput" type="email" name="email" placeholder="Enter your email" required="required" />
-              <button className="subscriptionBtn">
-                {/* <svg></svg> */}
-                N
-              </button>
+              <input
+                className="subscriptionInput"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required="required"
+              />
+              <button className="subscriptionBtn">{/* <svg></svg> */}N</button>
             </form>
           </div>
         </div>
-        <div className="footerFoot"></div>
+        <div className="footerFoot">
+          <p className="footerCopyright">
+            Copyright © 2021 UI8 LLC. All rights reserved
+          </p>
+          <div className="footerNote">
+            We use cookies for better service.
+            <Link to="#">Accept</Link>
+          </div>
+        </div>
       </Container>
     </footer>
   );

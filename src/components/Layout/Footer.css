@@ -8,10 +8,6 @@ footer {
   border-bottom: 1px solid #e6e8ec;
 }
 
-.footerColumn {
-  flex-grow: 1;
-  padding-right: 32px;
-}
 .footerColumn:first-child {
   flex-grow: 1;
   padding-right: 32px;
@@ -28,8 +24,21 @@ footer {
 }
 
 .footerLogo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  max-width: 40px;
+  height: auto;
   margin-bottom: 32px;
+}
+.footerLogo img {
+  width: 100%;
+}
+.footerLogo p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  color: #23262f;
+  font-weight: bold;
 }
 
 a {
@@ -72,12 +81,6 @@ a {
   font-weight: 500;
 }
 
-@media (min-width: 768px) {
-  .footerBody {
-    display: flex !important;
-  }
-}
-
 .footerMenu {
   display: flex;
   flex-direction: column;
@@ -112,7 +115,10 @@ a {
   position: relative;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   -webkit-appearance: none;
 }
 
@@ -130,7 +136,6 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
   transition: border-color 0.2s;
 }
 
-
 .subscriptionBtn {
   position: absolute;
   top: 8px;
@@ -141,10 +146,75 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
   border-radius: 50%;
   background: #3772ff;
   transition: background 0.2s;
+  border: none;
+  color: #fff;
 }
 
 .subscriptionBtn .icon {
   width: 14px;
   height: 14px;
   fill: #fcfcfd;
+}
+
+.footerFoot {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  font-size: 12px;
+  line-height: 1.66667;
+}
+
+.footerNote a {
+  margin-left: 16px;
+  font-weight: 600;
+  color: #3772ff;
+  transition: color 0.2s;
+}
+
+/* Mobile */
+
+@media (max-width: 1179px) {
+  .footerInfo {
+    font-size: 16px;
+  }
+  .footerColumn:nth-child(2) {
+    width: 276px;
+  }
+  .footerColumn:nth-child(3) {
+    width: 304px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footerRow {
+    display: block;
+  }
+  .footerMode {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin: 0;
+  }
+  .footerColumn:first-child {
+    position: relative;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+  .footerColumn:nth-child(2) {
+    width: auto;
+    margin-bottom: 32px;
+  }
+  .footerColumn:nth-child(3) {
+    width: 100%;
+    padding: 0;
+  }
+  .footerHead {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footerBody {
+    display: flex !important;
+  }
 }

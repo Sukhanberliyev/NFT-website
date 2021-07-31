@@ -36,6 +36,11 @@
 }
 .descriptionBtns {
   display: flex;
+  align-items: center;
+}
+
+.descriptionBtns button:first-child {
+  margin-right: 15px;
 }
 
 .descriptionGallery {
