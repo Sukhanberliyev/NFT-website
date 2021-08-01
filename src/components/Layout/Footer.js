@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // importing css
 import "./Footer.css";
@@ -10,6 +12,16 @@ import Container from "./Container";
 import logo from "../../assets/logo.png";
 
 const Footer = () => {
+  const [open, setOpen] = useState(false);
+  const [openTwo, setOpenTwo] = useState(false);
+
+  const dropHandler = () => {
+    setOpen(!open);
+  };
+  const dropHandlerTwo = () => {
+    setOpenTwo(!openTwo);
+  };
+
   return (
     <footer>
       <Container>
@@ -27,11 +39,14 @@ const Footer = () => {
           </div>
           <div className="footerColumn">
             <div className="footerGroup">
-              <div className="footerHead">
+              <div className="footerHead" onClick={dropHandler}>
                 Cryptonite
-                {/* <svg></svg> */}
+                <FontAwesomeIcon
+                  className={open ? "icon" : "iconActive"}
+                  icon={faChevronDown}
+                />
               </div>
-              <div className="footerBody">
+              <div className={`footerBody ${open ? "display" : ""}`}>
                 <div className="footerMenu">
                   <Link className="footerLink">Discover</Link>
                   <Link className="footerLink">Connect Wallet</Link>
@@ -39,11 +54,14 @@ const Footer = () => {
               </div>
             </div>
             <div className="footerGroup">
-              <div className="footerHead">
+              <div className="footerHead" onClick={dropHandlerTwo}>
                 Info
-                {/* <svg></svg> */}
+                <FontAwesomeIcon
+                  className={openTwo ? "icon" : "iconActive"}
+                  icon={faChevronDown}
+                />
               </div>
-              <div className="footerBody">
+              <div className={`footerBody ${openTwo ? "displayBlock" : ""}`}>
                 <div className="footerMenu">
                   <Link className="footerLink">FAQ</Link>
                   <Link className="footerLink">Create item</Link>

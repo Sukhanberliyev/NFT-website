@@ -81,6 +81,16 @@ a {
   font-weight: 500;
 }
 
+.icon {
+  display: none;
+}
+.iconActive {
+  display: none;
+}
+.footerHead.active .icon {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .footerMenu {
   display: flex;
   flex-direction: column;
@@ -108,7 +118,10 @@ a {
 }
 
 .footerText {
+  font-family: "DM Sans", sans-serif;
   margin-bottom: 24px;
+  font-size: 14px;
+  font-weight:300;
 }
 
 .subscription {
@@ -170,6 +183,9 @@ textarea {
   color: #3772ff;
   transition: color 0.2s;
 }
+.footerCopyright {
+  color: #777E90;
+}
 
 /* Mobile */
 
@@ -185,7 +201,10 @@ textarea {
   }
 }
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
+  .footerGroup {
+    flex: 0 0 50%;
+  }
   .footerRow {
     display: block;
   }
@@ -201,8 +220,8 @@ textarea {
     padding: 0;
   }
   .footerColumn:nth-child(2) {
-    width: auto;
     margin-bottom: 32px;
+    width: auto;
   }
   .footerColumn:nth-child(3) {
     width: 100%;
@@ -216,5 +235,80 @@ textarea {
 @media (min-width: 768px) {
   .footerBody {
     display: flex !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerColumn:nth-child(2) {
+    display: block;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #e6e8ec;
+  }
+  .footerHead {
+    position: relative;
+    margin-bottom: 0;
+    padding: 32px 32px 32px 0;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .footerBody {
+    display: none;
+    padding-bottom: 32px;
+  }
+  .footerGroup:nth-child(2) {
+    padding: 0px;
+  }
+
+  .footerGroup:not(:last-child) {
+    border-bottom: 1px solid #e6e8ec;
+    padding: 0px;
+  }
+  .icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #777e90;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .iconActive {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    fill: #777e90;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  .display {
+    display: block;
+  }
+  .displayBlock {
+    display: block;
+  }
+  .footerFoot {
+    display: block;
+    padding: 24px 0px 32px;
+  }
+  .footerCopyright {
+    text-align: center;
+  }
+  .footerNote {
+    display: none;
   }
 }
