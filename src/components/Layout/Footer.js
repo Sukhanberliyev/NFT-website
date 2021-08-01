@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -21,6 +21,18 @@ const Footer = () => {
   const dropHandlerTwo = () => {
     setOpenTwo(!openTwo);
   };
+
+  const footerDropHandler = () => {
+    if (window.innerWidth >= 768) {
+      setOpen(false);
+      setOpenTwo(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", footerDropHandler);
+    return () => window.removeEventListener("resize", footerDropHandler);
+  }, []);
 
   return (
     <footer>
