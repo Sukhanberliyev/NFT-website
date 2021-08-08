@@ -11,6 +11,10 @@ import Container from "./Container";
 // importing assests
 import logo from "../../assets/logo.png";
 
+// copyright year
+const year = new Date().getFullYear()
+const currentYear = year
+
 const Footer = () => {
   const [open, setOpen] = useState(false);
   const [openTwo, setOpenTwo] = useState(false);
@@ -101,7 +105,7 @@ const Footer = () => {
         </div>
         <div className="footerFoot">
           <p className="footerCopyright">
-            Copyright © 2021 UI8 LLC. All rights reserved
+            Copyright © {currentYear} Octobernine. All rights reserved
           </p>
           <div className="footerNote">
             We use cookies for better service.

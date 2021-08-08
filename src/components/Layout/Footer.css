@@ -121,7 +121,7 @@ a {
   font-family: "DM Sans", sans-serif;
   margin-bottom: 24px;
   font-size: 14px;
-  font-weight:300;
+  font-weight: 300;
 }
 
 .subscription {
@@ -184,7 +184,7 @@ textarea {
   transition: color 0.2s;
 }
 .footerCopyright {
-  color: #777E90;
+  color: #777e90;
 }
 
 /* Mobile */
@@ -258,6 +258,7 @@ textarea {
     display: none;
     padding-bottom: 32px;
   }
+
   .footerGroup:nth-child(2) {
     padding: 0px;
   }

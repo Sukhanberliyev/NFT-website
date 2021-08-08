@@ -7,9 +7,9 @@ import useClickOutside from "../../hooks/use-click-outside";
 
 import "./Dropdown.css";
 
-const options = ["Today", "Morning", "Dinner", "Evening"];
 
-const DropdownTwo = () => {
+
+const DropdownTwo = ({options}) => {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState(null);
   const toggleHandler = () => {
@@ -29,7 +29,8 @@ const DropdownTwo = () => {
   return (
     <div ref={domNode} tabIndex="0" className="select">
       <div onClick={toggleHandler} className="current">
-        {selection || "Today"}
+        {selection && selection}
+        {!selection && <div className='dropdownPlaceholder'>Choose option</div>}
         {open ? (
           <FontAwesomeIcon icon={faChevronUp} />
         ) : (
