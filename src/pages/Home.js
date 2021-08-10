@@ -15,6 +15,7 @@ import nftImage12 from "../assets/images/nftImage12.png";
 import creatorImg from "../assets/avatars/creator1.png";
 import creatorImg2 from "../assets/avatars/creator2.png";
 import creatorImg3 from "../assets/avatars/creator3.png";
+import MainDiscover from "../components/MainDiscover/MainDiscover";
 
 
 const DUMMY_HERO_SECTION = [
@@ -58,6 +59,7 @@ const Home = () => {
       <Popular />
       <Hot />
       <Collections />
+      <MainDiscover />
       <Description />
     </Fragment>
   );
