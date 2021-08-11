@@ -39,6 +39,7 @@ import creator6 from "../../assets/avatars/creator6.png";
 import creator7 from "../../assets/avatars/creator7.png";
 import creator8 from "../../assets/avatars/creator8.png";
 import creator9 from "../../assets/avatars/creator9.png";
+import Slider from "react-slick";
 
 // importing DUMMY_DATA
 const discoverNfts = [
@@ -53,9 +54,130 @@ const discoverNfts = [
     amount: "1",
     price: "0.1",
   },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
+  {
+    id: "h1",
+    mainNft: nftImage32,
+    title: "Space Park",
+    bid: "2.45",
+    creator1: creator24,
+    creator2: creator12,
+    creator3: creator11,
+    amount: "1",
+    price: "0.1",
+  },
 ];
 
 const MainDiscover = () => {
+  // React slick library setings
+  var settings = {
+    dots: true,
+    rows: 2,
+    infinite: true,
+    speed: 500,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          rows: 3,
+          slidesToScroll: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          rows: 4,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          dots: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          rows: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false,
+        },
+      },
+    ],
+  };
   return (
     <section className="discover">
       <Container>
@@ -92,20 +214,21 @@ const MainDiscover = () => {
           </div>
         </div>
         <div className="discoverList">
-          {/* import slider */}
-          {discoverNfts.map((discoverNft) => (
-            <Card
-              key={discoverNft.id}
-              mainNft={discoverNft.mainNft}
-              title={discoverNft.title}
-              bid={discoverNft.bid}
-              creator1={discoverNft.creator1}
-              creator2={discoverNft.creator2}
-              creator3={discoverNft.creator3}
-              amount={discoverNft.amount}
-              price={discoverNft.price}
-            />
-          ))}
+          <Slider {...settings}>
+            {discoverNfts.map((discoverNft) => (
+              <Card
+                key={discoverNft.id}
+                mainNft={discoverNft.mainNft}
+                title={discoverNft.title}
+                bid={discoverNft.bid}
+                creator1={discoverNft.creator1}
+                creator2={discoverNft.creator2}
+                creator3={discoverNft.creator3}
+                amount={discoverNft.amount}
+                price={discoverNft.price}
+              />
+            ))}
+          </Slider>
         </div>
         <div className="discoverBtn"></div>
       </Container>
