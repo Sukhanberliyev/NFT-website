@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // importing components
+import "./MainDiscover.css";
+// importing components
 import Dropdown from "../UI/Dropdown";
 import Container from "../Layout/Container";
 import Card from "../UI/Card";
+import MainButton from "../UI/MainButton";
 
 // importing NFTs
 import nftImage32 from "../../assets/images/nftImage32.png";
@@ -54,9 +57,9 @@ const discoverNfts = [
 
 const MainDiscover = () => {
   return (
-    <section>
+    <section className="discover">
       <Container>
-        <h3>Discover</h3>
+        <h3 className="discoverTitle">Discover</h3>
         <div className="discoverTop">
           <Dropdown />
           <div className="discoverNav">
@@ -70,13 +73,22 @@ const MainDiscover = () => {
           <div className="tabletShow">
             <Dropdown />
           </div>
-          <button className="filterButton"></button>
+          <MainButton>Filter</MainButton>
         </div>
-        <div className="discoverFilter">
+        <div className="discoverFilters">
           <div className="discoverSorting">
-            <Dropdown />
-            <Dropdown />
-            <Dropdown />
+            <div className="discoverDropdown">
+              <Dropdown />
+            </div>
+            <div className="discoverDropdown">
+              <Dropdown />
+            </div>
+            <div className="discoverDropdown">
+              <Dropdown />
+            </div>
+            <div className="discoverDropdown">
+              <Dropdown />
+            </div>
           </div>
         </div>
         <div className="discoverList">
