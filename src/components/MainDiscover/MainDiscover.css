@@ -57,5 +57,51 @@
 .discoverDropdown {
   flex: 0 0 calc(25% - 32px);
   max-width: calc(25% - 32px);
+  width: 100%;
   margin: 32px 16px 0;
+}
+
+@media (max-width: 1180px) {
+  .discoverSorting {
+    margin: -24px -8px 0;
+  }
+  .discoverDropdown {
+    flex: 0 0 calc(25% - 16px);
+    max-width: calc(25% - 16px);
+    margin: 24px 8px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .discoverDropdown {
+    flex: 0 0 calc(50% - 32px);
+    max-width: calc(50% - 32px);
+    margin: 32px 16px 0;
+  }
+  .discoverNav {
+    display: none;
+  }
+  .tabletShow {
+    display: block !important;
+  }
+}
+@media (max-width: 768px) {
+  .discoverSorting {
+    display: block;
+    margin: 0; 
+  }
+  .discoverDropdown {
+    max-width: 100%;
+    margin: 0;
+  }
+  .discoverTop {
+    display: block;
+  }
+  .discoverDropdown:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .discoverDropdown:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

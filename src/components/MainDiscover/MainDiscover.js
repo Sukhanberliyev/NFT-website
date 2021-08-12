@@ -146,7 +146,7 @@ const MainDiscover = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1180,
         settings: {
           slidesToShow: 3,
           rows: 3,
@@ -156,7 +156,7 @@ const MainDiscover = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           rows: 4,
