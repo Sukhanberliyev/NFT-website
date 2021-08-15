@@ -14,6 +14,11 @@
   color: #777e90;
 }
 
+.popularDropdown {
+  min-width: 260px;
+  width: 100%;
+}
+
 .select {
   float: none;
   height: 64px;

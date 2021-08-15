@@ -40,6 +40,7 @@ import creator7 from "../../assets/avatars/creator7.png";
 import creator8 from "../../assets/avatars/creator8.png";
 import creator9 from "../../assets/avatars/creator9.png";
 import Slider from "react-slick";
+import MainDiscoverDropdown from "./MainDiscoverDropdown";
 
 // importing DUMMY_DATA
 const discoverNfts = [
@@ -133,57 +134,70 @@ const discoverNfts = [
   },
 ];
 
+// --------------- Setting out slider's setting ---------------
+var settings = {
+  dots: true,
+  rows: 2,
+  infinite: true,
+  speed: 500,
+  arrows: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1180,
+      settings: {
+        slidesToShow: 3,
+        rows: 3,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        rows: 4,
+        slidesToScroll: 2,
+        initialSlide: 2,
+        dots: true,
+        arrows: false,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        rows: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+      },
+    },
+  ],
+};
+// --------------- Slider's setting end ---------------
+
+const dropdowns = [
+  { id: "d1", label: "Price", options: ["Highest price", "The lowest price"] },
+  { id: "d2", label: "Likes", options: ["Most liked", "Least liked"] },
+  { id: "d2", label: "Creator", options: ["Verified only", "All", "Most liked"] },
+  { id: "d2", label: "Price Range", options: ["1", "2", "3"] },
+];
+
 const MainDiscover = () => {
-  // React slick library setings
-  var settings = {
-    dots: true,
-    rows: 2,
-    infinite: true,
-    speed: 500,
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1180,
-        settings: {
-          slidesToShow: 3,
-          rows: 3,
-          slidesToScroll: 2,
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          rows: 4,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          dots: true,
-          arrows: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          rows: 1,
-          slidesToScroll: 1,
-          dots: true,
-          arrows: false,
-        },
-      },
-    ],
-  };
+  const mySlider = settings;
+
   return (
     <section className="discover">
       <Container>
         <h3 className="discoverTitle">Discover</h3>
         <div className="discoverTop">
-          <Dropdown />
+          <div className="timeFrameDropDown">
+            <Dropdown />
+          </div>
           <div className="discoverNav">
             <Link className="discoverLink">All items</Link>
             <Link className="discoverLink">Art</Link>
@@ -199,22 +213,17 @@ const MainDiscover = () => {
         </div>
         <div className="discoverFilters">
           <div className="discoverSorting">
-            <div className="discoverDropdown">
-              <Dropdown />
-            </div>
-            <div className="discoverDropdown">
-              <Dropdown />
-            </div>
-            <div className="discoverDropdown">
-              <Dropdown />
-            </div>
-            <div className="discoverDropdown">
-              <Dropdown />
-            </div>
+            {dropdowns.map((dropdown) => (
+              <MainDiscoverDropdown
+                key={dropdown.id}
+                label={dropdown.label}
+                options={dropdown.options}
+              />
+            ))}
           </div>
         </div>
         <div className="discoverList">
-          <Slider {...settings}>
+          <Slider {...mySlider}>
             {discoverNfts.map((discoverNft) => (
               <Card
                 key={discoverNft.id}

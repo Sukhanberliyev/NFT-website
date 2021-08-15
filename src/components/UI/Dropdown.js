@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 // importing custom-hook
 import useClickOutside from "../../hooks/use-click-outside";
 
 import "./Dropdown.css";
 
-
-
-const DropdownTwo = ({options}) => {
+const DropdownTwo = ({ options }) => {
   const [open, setOpen] = useState(false);
   const [selection, setSelection] = useState(null);
   const toggleHandler = () => {
@@ -26,16 +24,16 @@ const DropdownTwo = ({options}) => {
     setOpen(false);
   });
 
+
   return (
     <div ref={domNode} tabIndex="0" className="select">
       <div onClick={toggleHandler} className="current">
         {selection && selection}
-        {!selection && <div className='dropdownPlaceholder'>Choose option</div>}
-        {open ? (
-          <FontAwesomeIcon icon={faChevronUp} />
-        ) : (
-          <FontAwesomeIcon icon={faChevronDown} />
-        )}
+        {!selection && <div className="dropdownPlaceholder">Choose option</div>}
+        <FontAwesomeIcon
+          className={open ? "icon" : "iconActive"}
+          icon={faChevronDown}
+        />
       </div>
       {open && (
         <ul className="list">

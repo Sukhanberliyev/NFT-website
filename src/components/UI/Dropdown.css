@@ -47,3 +47,33 @@
   font-weight: 500;
   color: #3772FF;
 }
+
+.icon {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  fill: #777e90;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  transform: translateY(-50%) rotate(180deg);
+}
+.iconActive {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  fill: #777e90;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}

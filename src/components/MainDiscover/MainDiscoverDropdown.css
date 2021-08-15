@@ -1,0 +1,18 @@
+.discoverDropdown {
+  flex: 0 0 calc(25% - 32px);
+  max-width: calc(25% - 32px);
+  width: 100%;
+  margin: 32px 16px 0;
+}
+
+.fieldLabel {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+.fieldWrap {
+  position: relative;
+}
