@@ -183,7 +183,11 @@ var settings = {
 const dropdowns = [
   { id: "d1", label: "Price", options: ["Highest price", "The lowest price"] },
   { id: "d2", label: "Likes", options: ["Most liked", "Least liked"] },
-  { id: "d2", label: "Creator", options: ["Verified only", "All", "Most liked"] },
+  {
+    id: "d3",
+    label: "Creator",
+    options: ["Verified only", "All", "Most liked"],
+  },
   { id: "d2", label: "Price Range", options: ["1", "2", "3"] },
 ];
 
@@ -196,7 +200,7 @@ const MainDiscover = () => {
         <h3 className="discoverTitle">Discover</h3>
         <div className="discoverTop">
           <div className="timeFrameDropDown">
-            <Dropdown />
+            <Dropdown options={["Recently added", "Long added"]} />
           </div>
           <div className="discoverNav">
             <Link className="discoverLink">All items</Link>
@@ -207,9 +211,11 @@ const MainDiscover = () => {
             <Link className="discoverLink">Video</Link>
           </div>
           <div className="tabletShow">
-            <Dropdown />
+            <Dropdown options={["All items", "Art", "Game", "Photography", "Music", "Video"]} />
           </div>
-          <MainButton>Filter</MainButton>
+          <div className="filter">
+            <MainButton>Filter</MainButton>
+          </div>
         </div>
         <div className="discoverFilters">
           <div className="discoverSorting">
@@ -220,6 +226,7 @@ const MainDiscover = () => {
                 options={dropdown.options}
               />
             ))}
+            <input type="range" />
           </div>
         </div>
         <div className="discoverList">
