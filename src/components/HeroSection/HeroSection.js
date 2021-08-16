@@ -28,7 +28,9 @@ const HeroSection = (props) => {
           <div className={classes.mainHead}>
             <p>CREATE, EXPLORE, & COLLECT DIGITAL ART NFTs.</p>
             <h3>The new creative economy</h3>
-            <OutlineButton>Start your search</OutlineButton>
+            <div className={classes.heroButton}>
+              <OutlineButton>Start your search</OutlineButton>
+            </div>
           </div>
           <Slider {...settings}>
             {props.nfts.map((nft) => (

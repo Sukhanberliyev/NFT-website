@@ -45,7 +45,6 @@ const MyDropdown = ({ classes }) => {
 
 const PopularTop = () => {
   const timeframeOptions = ["Today", "Morning", "Dinner", "Evening"];
-  const anotherArrayOfOptions = ["a", "b", "c"];
   return (
     <div className={classes.popularTop}>
       <div className={classes.popularBox}>
@@ -57,7 +56,6 @@ const PopularTop = () => {
         <div className={classes.popularDropdown}>
           <Dropdown options={timeframeOptions} />
         </div>
-        <Dropdown options={anotherArrayOfOptions} />
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // importing components
@@ -8,6 +8,10 @@ import Dropdown from "../UI/Dropdown";
 import Container from "../Layout/Container";
 import Card from "../UI/Card";
 import MainButton from "../UI/MainButton";
+
+// importing icons
+import filter from "../../assets/icons/filter.svg";
+import filterOff from "../../assets/icons/filterOff.svg";
 
 // importing NFTs
 import nftImage32 from "../../assets/images/nftImage32.png";
@@ -188,12 +192,21 @@ const dropdowns = [
     label: "Creator",
     options: ["Verified only", "All", "Most liked"],
   },
-  { id: "d2", label: "Price Range", options: ["1", "2", "3"] },
+  {
+    id: "d4",
+    label: "Price Range",
+    options: ["option 1", "option 2", "option 3"],
+  },
 ];
 
 const MainDiscover = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const mySlider = settings;
 
+  const filterHandler = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <section className="discover">
       <Container>
@@ -211,13 +224,27 @@ const MainDiscover = () => {
             <Link className="discoverLink">Video</Link>
           </div>
           <div className="tabletShow">
-            <Dropdown options={["All items", "Art", "Game", "Photography", "Music", "Video"]} />
+            <Dropdown
+              options={[
+                "All items",
+                "Art",
+                "Game",
+                "Photography",
+                "Music",
+                "Video",
+              ]}
+            />
           </div>
-          <div className="filter">
-            <MainButton>Filter</MainButton>
+          <div className="filter" onClick={filterHandler}>
+            <MainButton>
+              <div className="filterBtn">
+                Filter
+                {!isOpen ? <img src={filter} alt="icon" /> : <img src={filterOff} alt="icon" />}
+              </div>
+            </MainButton>
           </div>
         </div>
-        <div className="discoverFilters">
+        <div className={`discoverFilters ${isOpen ? "display" : ""}`}>
           <div className="discoverSorting">
             {dropdowns.map((dropdown) => (
               <MainDiscoverDropdown
@@ -226,7 +253,7 @@ const MainDiscover = () => {
                 options={dropdown.options}
               />
             ))}
-            <input type="range" />
+            {/* <input type="range" /> */}
           </div>
         </div>
         <div className="discoverList">

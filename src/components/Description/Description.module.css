@@ -41,6 +41,10 @@
 
 .descriptionBtns button:first-child {
   margin-right: 15px;
+  width: 180px;
+}
+.descriptionBtns button:last-child {
+  width: 180px;
 }
 
 .descriptionGallery {
@@ -88,6 +92,13 @@
   }
   .descriptionBtns {
     display: block;
+  }
+  .descriptionBtns button:first-child {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .descriptionBtns button:last-child {
+    width: 100%;
   }
   .descriptionGallery {
     position: static;

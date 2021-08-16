@@ -4,6 +4,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 @media (max-width: 1024px) {
   .mainRow {
     display: block;
@@ -186,7 +187,12 @@ h1 {
 .mainBtns {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
+.mainBtns button:last-child {
+  margin-top: 15px;
+}
+
 .extraMargin {
   margin-bottom: 15px;
 }

@@ -74,7 +74,9 @@ img {
   font-weight: 500;
   color: #353945;
 }
-
+.secondHeroBtn {
+  width: 145px;
+}
 /* Mobile */
 @media (max-width: 1339px) {
   .secondHeroRow {

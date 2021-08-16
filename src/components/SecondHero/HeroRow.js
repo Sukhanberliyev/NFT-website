@@ -57,9 +57,9 @@ const HeroRow = () => {
               <Bid>0.3 ETH</Bid>
               <p className={classes.selectionContent}>1 of 12</p>
             </div>
-            <OutlineButton className={classes.button}>
-              Place a bid
-            </OutlineButton>
+            <div className={classes.secondHeroBtn}>
+              <OutlineButton>Place a bid</OutlineButton>
+            </div>
           </div>
         </Link>
         <Link className={classes.selectionItem}>
@@ -75,7 +75,9 @@ const HeroRow = () => {
               <Bid>0.3 ETH</Bid>
               <p className={classes.selectionContent}>1 of 12</p>
             </div>
-            <OutlineButton>Place a bid</OutlineButton>
+            <div className={classes.secondHeroBtn}>
+              <OutlineButton>Place a bid</OutlineButton>
+            </div>
           </div>
         </Link>
         <Link className={classes.selectionItem}>
@@ -91,7 +93,9 @@ const HeroRow = () => {
               <Bid>0.3 ETH</Bid>
               <p className={classes.selectionContent}>1 of 12</p>
             </div>
-            <OutlineButton>Place a bid</OutlineButton>
+            <div className={classes.secondHeroBtn}>
+              <OutlineButton>Place a bid</OutlineButton>
+            </div>
           </div>
         </Link>
       </div>

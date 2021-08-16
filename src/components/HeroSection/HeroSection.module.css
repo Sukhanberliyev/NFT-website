@@ -2,6 +2,9 @@
   padding: 115px 0px;
 }
 .mainHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 600px;
   margin: 0px auto 128px;
   text-align: center;
@@ -21,6 +24,9 @@
   line-height: 1.2;
   letter-spacing: -.01em;
   margin-bottom: 24px;
+}
+.heroButton {
+  width: 200px;
 }
  
 @media (max-width: 768px) {

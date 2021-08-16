@@ -81,6 +81,9 @@ a {
   font-weight: 500;
 }
 
+.footerIcon {
+  display: none;
+}
 .icon {
   display: none;
 }
@@ -253,6 +256,9 @@ textarea {
     line-height: 1;
     font-weight: 700;
     text-transform: uppercase;
+  }
+  .footerIcon {
+    display: block;
   }
   .footerBody {
     display: none;

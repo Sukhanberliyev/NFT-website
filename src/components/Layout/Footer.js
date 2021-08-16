@@ -12,8 +12,8 @@ import Container from "./Container";
 import logo from "../../assets/logo.png";
 
 // copyright year
-const year = new Date().getFullYear()
-const currentYear = year
+const year = new Date().getFullYear();
+const currentYear = year;
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -56,11 +56,13 @@ const Footer = () => {
           <div className="footerColumn">
             <div className="footerGroup">
               <div className="footerHead" onClick={dropHandler}>
+                <div className="footerIcon">
+                  <FontAwesomeIcon
+                    className={open ? "icon" : "iconActive"}
+                    icon={faChevronDown}
+                  />
+                </div>
                 Cryptonite
-                <FontAwesomeIcon
-                  className={open ? "icon" : "iconActive"}
-                  icon={faChevronDown}
-                />
               </div>
               <div className={`footerBody ${open ? "display" : ""}`}>
                 <div className="footerMenu">
@@ -72,10 +74,12 @@ const Footer = () => {
             <div className="footerGroup">
               <div className="footerHead" onClick={dropHandlerTwo}>
                 Info
-                <FontAwesomeIcon
-                  className={openTwo ? "icon" : "iconActive"}
-                  icon={faChevronDown}
-                />
+                <div className="footerIcon">
+                  <FontAwesomeIcon
+                    className={openTwo ? "icon" : "iconActive"}
+                    icon={faChevronDown}
+                  />
+                </div>
               </div>
               <div className={`footerBody ${openTwo ? "displayBlock" : ""}`}>
                 <div className="footerMenu">

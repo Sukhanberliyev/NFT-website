@@ -16,6 +16,7 @@
 .fieldWrap {
   position: relative;
 }
+
 @media (max-width: 1180px) {
   .discoverDropdown {
     flex: 0 0 calc(25% - 16px);
