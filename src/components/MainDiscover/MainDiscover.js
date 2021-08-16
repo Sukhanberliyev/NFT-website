@@ -24,22 +24,17 @@ import nftImage33 from "../../assets/images/nftImage33.png";
 import nftImage34 from "../../assets/images/nftImage34.png";
 
 // importing creators
-import creator24 from "../../assets/avatars/creator24.png";
 import creator12 from "../../assets/avatars/creator12.png";
 import creator11 from "../../assets/avatars/creator11.png";
-
 import creator15 from "../../assets/avatars/creator15.png";
 import creator16 from "../../assets/avatars/creator16.png";
 import creator17 from "../../assets/avatars/creator17.png";
-
 import creator1 from "../../assets/avatars/creator1.png";
 import creator2 from "../../assets/avatars/creator2.png";
 import creator3 from "../../assets/avatars/creator3.png";
-
 import creator4 from "../../assets/avatars/creator4.png";
 import creator5 from "../../assets/avatars/creator5.png";
 import creator6 from "../../assets/avatars/creator6.png";
-
 import creator7 from "../../assets/avatars/creator7.png";
 import creator8 from "../../assets/avatars/creator8.png";
 import creator9 from "../../assets/avatars/creator9.png";
@@ -187,26 +182,19 @@ var settings = {
 const dropdowns = [
   { id: "d1", label: "Price", options: ["Highest price", "The lowest price"] },
   { id: "d2", label: "Likes", options: ["Most liked", "Least liked"] },
-  {
-    id: "d3",
-    label: "Creator",
-    options: ["Verified only", "All", "Most liked"],
-  },
-  {
-    id: "d4",
-    label: "Price Range",
-    options: ["option 1", "option 2", "option 3"],
-  },
+  { id: "d3", label: "Creator", options: ["Verified only", "All", "Most liked"] },
 ];
 
 const MainDiscover = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
+  const tabletDropdown = ["All items", "Art", "Game", "Photography", "Music", "Video",];
   const mySlider = settings;
 
   const filterHandler = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <section className="discover">
       <Container>
@@ -225,21 +213,18 @@ const MainDiscover = () => {
           </div>
           <div className="tabletShow">
             <Dropdown
-              options={[
-                "All items",
-                "Art",
-                "Game",
-                "Photography",
-                "Music",
-                "Video",
-              ]}
+              options={tabletDropdown}
             />
           </div>
           <div className="filter" onClick={filterHandler}>
             <MainButton>
               <div className="filterBtn">
                 Filter
-                {!isOpen ? <img src={filter} alt="icon" /> : <img src={filterOff} alt="icon" />}
+                {!isOpen ? (
+                  <img src={filter} alt="icon" />
+                ) : (
+                  <img src={filterOff} alt="icon" />
+                )}
               </div>
             </MainButton>
           </div>
@@ -253,7 +238,17 @@ const MainDiscover = () => {
                 options={dropdown.options}
               />
             ))}
-            {/* <input type="range" /> */}
+            <div className="discoverRange">
+              <div className="range">
+                <p className="rangeLabel">Price Range</p>
+                <input type="range" min="0" max="100" className="slider"
+                />
+                <div className="rangeIndicators">
+                  <p className="rangeText">0.01 ETH</p>
+                  <p className="rangeText">10 ETH</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="discoverList">
