@@ -55,6 +55,13 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
+.descriptionPreview {
+  position: relative;
+  z-index: 2;
+}
+.descriptionPreview img {
+  width: 100%;
+}
 
 /* Mobile Design */
 
@@ -72,6 +79,9 @@
   .descriptionGallery {
     right: calc(50% - 440px);
     width: 470px;
+  }
+  .descriptionWrap {
+    max-width: 420px;
   }
 }
 

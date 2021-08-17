@@ -29,7 +29,7 @@ const DropdownTwo = ({ options }) => {
     <div ref={domNode} tabIndex="0" className="select">
       <div onClick={toggleHandler} className="current">
         {selection && selection}
-        {!selection && <div className="dropdownPlaceholder">Choose option</div>}
+        {!selection && <div className="dropdownPlaceholder">{options[0]}</div>}
         <FontAwesomeIcon
           className={open ? "icon" : "iconActive"}
           icon={faChevronDown}
