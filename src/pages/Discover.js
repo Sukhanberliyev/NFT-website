@@ -1,9 +1,10 @@
 import React from 'react'
+import Marketplace from '../components/Marketplace/Marketplace'
 
 const Discover = () => {
   return (
     <div>
-      <h1>This is discover page</h1>
+      <Marketplace />
     </div>
   )
 }
