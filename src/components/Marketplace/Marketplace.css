@@ -83,7 +83,45 @@
   background: #353945;
   color: #fcfcfd;
 }
+.marketplaceRow {
+  display: flex;
+}
 
+.marketplaceFilters {
+  flex-shrink: 0;
+  width: 256px;
+}
+
+.range {
+  margin-bottom: 24px;
+}
+.rangeLabel {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+.rangeIndicators {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.rangeText {
+  font-size: 14px;
+  font-weight: 500;
+}
+.additionalMargin {
+  margin: 0px;
+}
+.marketplaceDropdowns {
+  margin-bottom: 24px;
+  padding: 24px 0;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #e6e8ec;
+}
 /* Responsive */
 
 @media (max-width: 1339px) {
@@ -119,6 +157,13 @@
     width: 100%;
     margin: 0 0 32px;
   }
+  .marketplaceRow {
+    display: block;
+  }
+  .marketplaceFilters {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -133,7 +178,8 @@
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
   }
-  .marketplaceNav::before, .marketplaceNav::after {
+  .marketplaceNav::before,
+  .marketplaceNav::after {
     content: "";
     flex-shrink: 0;
     width: 32px;

@@ -1,0 +1,15 @@
+.marketplaceField:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.marketplaceFieldLabel {
+  margin-bottom: 12px;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b1b5c3;
+}
+.marketplaceFieldWrap {
+  position: relative;
+}
