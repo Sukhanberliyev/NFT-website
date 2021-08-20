@@ -50,6 +50,10 @@
   border: none;
   color: #fff;
 }
+.marketplaceBtn img {
+  width: 20px;
+  height: 20px;
+}
 
 .marketplaceSorting {
   display: flex;
@@ -122,6 +126,29 @@
   border-style: solid;
   border-color: #e6e8ec;
 }
+
+.marketplaceReset {
+  display: flex;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.marketplaceReset img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+.loadBtn {
+   margin-top: 32px;
+   width: 130px;
+  position: relative;
+  bottom: 0px;
+  left: 40%;
+}
 /* Responsive */
 
 @media (max-width: 1339px) {
@@ -190,5 +217,19 @@
   }
   .marketplaceLink:not(:last-child) {
     margin-right: 12px;
+  }
+  .loadBtn {
+    left: 35%;
+  }
+}
+
+@media (max-width: 435px) {
+  .loadBtn {
+    left: 30%;
+  }
+}
+@media (max-width: 330px) {
+  .loadBtn {
+    left: 25%;
   }
 }

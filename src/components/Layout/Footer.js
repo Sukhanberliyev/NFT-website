@@ -10,6 +10,7 @@ import Container from "./Container";
 
 // importing assests
 import logo from "../../assets/logo.png";
+import send from "../../assets/icons/send.svg";
 
 // copyright year
 const year = new Date().getFullYear();
@@ -103,7 +104,9 @@ const Footer = () => {
                 placeholder="Enter your email"
                 required="required"
               />
-              <button className="subscriptionBtn">{/* <svg></svg> */}N</button>
+              <button className="subscriptionBtn">
+                <img className="subscriptionIcon" src={send} alt="icon" />
+              </button>
             </form>
           </div>
         </div>

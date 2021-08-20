@@ -166,10 +166,11 @@ textarea {
   color: #fff;
 }
 
-.subscriptionBtn .icon {
-  width: 14px;
-  height: 14px;
-  fill: #fcfcfd;
+.subscriptionBtn img {
+  position: relative;
+  left: -1%;
+  width: 20px;
+  height: 20px;
 }
 
 .footerFoot {

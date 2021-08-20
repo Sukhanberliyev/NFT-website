@@ -7,6 +7,11 @@ import Container from "../Layout/Container";
 import Dropdown from "../UI/Dropdown";
 import MarketplaceDropdown from "./MarketplaceDropdown";
 import Card from "../UI/Card";
+import OutlineButton from "../UI/OutlineButton"
+
+// importing icons
+import reset from "../../assets/icons/reset.svg"
+import search from "../../assets/icons/search.svg"
 
 // importing NFTs
 import nftImage32 from "../../assets/images/nftImage32.png";
@@ -163,7 +168,7 @@ const Marketplace = () => {
               placeholder="Search"
               required
             />
-            <button className="marketplaceBtn">S</button>
+            <button className="marketplaceBtn"><img src={search} alt="icon" /></button>
           </form>
         </div>
         <div className="marketplaceSorting">
@@ -197,6 +202,10 @@ const Marketplace = () => {
                 />
               ))}
             </div>
+            <div className="marketplaceReset">
+              <img src={reset} alt="icon" />
+              Reset filter
+            </div>
           </div>
           <div className="marketplaceWrapper">
             <div className="marketplaceList">
@@ -215,6 +224,9 @@ const Marketplace = () => {
                   />
                 </div>
               ))}
+            </div>
+            <div className="loadBtn">
+              <OutlineButton>Load more</OutlineButton>
             </div>
           </div>
         </div>
