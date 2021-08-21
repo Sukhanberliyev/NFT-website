@@ -71,6 +71,9 @@
   margin-bottom: 40px;
 }
 .faqBox {
+  display: none;
+}
+.faqBox.active {
   display: block;
 }
 .faqItem {
