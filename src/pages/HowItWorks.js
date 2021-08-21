@@ -1,9 +1,11 @@
 import React from 'react'
-
+import FAQ from '../components/HowItWorks/FAQ'
+import Hot from "../components/HotBid/Hot"
 const HowItWorks = () => {
   return (
     <div>
-      <h1>This is how it works page</h1>
+      <FAQ />
+      <Hot />
     </div>
   )
 }
