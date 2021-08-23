@@ -46,6 +46,7 @@ function NavigationBar() {
             <li className="nav-item">
               <NavLink
                 to="/discover"
+                activeClassName="active"
                 className="nav-links"
                 onClick={closeMenuHandler}
               >
@@ -55,6 +56,7 @@ function NavigationBar() {
             <li className="nav-item">
               <NavLink
                 to="/how-it-works"
+                activeClassName="active"
                 className="nav-links"
                 onClick={closeMenuHandler}
               >

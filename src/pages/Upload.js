@@ -1,9 +1,11 @@
 import React from 'react'
+import Create from '../components/Create/Create'
 
 const Upload = () => {
   return (
     <div>
-      <h1>This is upload page</h1>
+      <Create />
+      {/* Here you can also use "Nested Routes" for single and multiple upload */}
     </div>
   )
 }

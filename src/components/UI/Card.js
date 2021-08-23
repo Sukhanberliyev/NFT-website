@@ -56,7 +56,7 @@ const Card = (props) => {
           </button>
         </div>
       </div>
-      <Link className="cardLink">
+      <Link className="cardLink" to={`/discover/${props.id}`}>
         <div className="cardBody">
           <div className="cardLine cardMargin">
             <p className="cardTitle">{props.title}</p>

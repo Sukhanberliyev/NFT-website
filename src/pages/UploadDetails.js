@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-const ItemDetails = () => {
+const UploadDetails = () => {
 
   const params = useParams();
   const {itemId} = params
@@ -13,4 +13,4 @@ const ItemDetails = () => {
   )
 }
 
-export default ItemDetails
+export default UploadDetails

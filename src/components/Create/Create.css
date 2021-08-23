@@ -1,0 +1,125 @@
+.upload {
+  padding: 128px 0px;
+  text-align: center;
+}
+.uploadContainer {
+  max-width: 896px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.uploadTop {
+  max-width: 736px;
+  margin: 0 auto 80px;
+}
+
+.uploadList {
+  display: flex;
+  margin: 0 -16px 32px;
+}
+.uploadNote {
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+
+.uploadTitle {
+  margin-bottom: 16px;
+  font-size: 48px;
+  line-height: 1.16667;
+  letter-spacing: -0.02em;
+}
+
+.uploadInfo {
+  font-weight: 300;
+  color: #777e90;
+  font-size: 14px;
+}
+
+.uploadInfo span {
+  color: #23262f;
+}
+
+.uploadItem {
+  flex: 0 0 calc(50% - 32px);
+  width: calc(50% - 32px);
+  margin: 0 16px;
+  padding: 16px 16px 24px;
+  border-radius: 16px;
+  border: 1px solid #e6e8ec;
+  transition: box-shadow 0.2s;
+}
+.uploadItem:hover {
+  box-shadow: 0px 40px 32px -24px rgb(15 15 15 / 12%);
+}
+
+.uploadPreview {
+  margin-bottom: 24px;
+}
+.uploadPreview img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.createBtn {
+  background: none;
+  box-shadow: 0 0 0 2px #e6e8ec inset;
+  color: #23262f;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  transition: all 0.2s;
+}
+.createBtn:hover {
+  background-color: #3772ff;
+  color: #fff;
+  border: none;
+}
+
+@media (max-width: 1179px) {
+  .uploadTop {
+    margin-bottom: 64px;
+  }
+  .upload {
+    padding: 80px 0px;
+  }
+}
+@media (max-width: 1023px) {
+  .uploadContainer {
+    padding: 0 40px;
+  }
+  .upload {
+    padding: 64px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .upload {
+    padding: 32px 0px;
+  }
+  .uploadContainer {
+    padding: 0 32px;
+  }
+  .uploadTop {
+    margin-bottom: 32px;
+  }
+  .uploadList {
+    display: block;
+    margin: 0 0 32px;
+  }
+  .uploadItem {
+    width: 100%;
+    margin: 0;
+  }
+  .uploadItem:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}

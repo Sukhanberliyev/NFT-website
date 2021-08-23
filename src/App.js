@@ -1,11 +1,12 @@
 import { Route, Switch } from "react-router-dom";
+
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
 import Discover from "./pages/Discover";
 import HowItWorks from "./pages/HowItWorks";
 import Upload from "./pages/Upload";
 import ConnectWallet from "./pages/ConnectWallet";
-import ItemDetails from "./pages/ItemDetails";
+import NftDetails from "./pages/NftDetails";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
         <Route path="/discover" exact>
           <Discover />
         </Route>
-        <Route path="/discover:itemId" exact>
-          <ItemDetails />
+        <Route path="/discover/:NftId" exact>
+          <NftDetails />
         </Route>
         <Route path="/how-it-works" exact>
           <HowItWorks />
