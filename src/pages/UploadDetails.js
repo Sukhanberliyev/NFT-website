@@ -1,14 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+// import { useParams } from 'react-router-dom'
+import CreateSingle from "../components/Create/CreateSingle"
 
 const UploadDetails = () => {
 
-  const params = useParams();
-  const {itemId} = params
-
   return (
     <div>
-      <h1>{itemId}</h1>
+      <CreateSingle />
     </div>
   )
 }

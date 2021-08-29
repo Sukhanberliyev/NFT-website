@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Route } from "react-router-dom";
 
 import nftImage2 from "../../assets/images/nftImage2.png";
 import nftImage1 from "../../assets/images/nftImage1.png";
 
 import "./Create.css";
+import UploadDetails from "../../pages/UploadDetails";
 
 const Create = () => {
   return (
@@ -24,7 +25,7 @@ const Create = () => {
             <div className="uploadPreview">
               <img src={nftImage2} alt="img" />
             </div>
-            <Link className="createBtn">Create Single</Link>
+            <Link to="/single" className="createBtn">Create Single</Link>
           </div>
           <div className="uploadItem">
             <div className="uploadPreview">
