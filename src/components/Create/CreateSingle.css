@@ -133,6 +133,56 @@ textarea {
   position: relative;
 }
 
+.createSingleOptions {
+  margin-bottom: 40px;
+}
+.createSingleOptionCategory {
+  display: flex;
+  align-items: flex-start;
+}
+.createSingleOptionCategory:not(:last-child) {
+  margin-bottom: 32px;
+}
+.createBox {
+  flex-grow: 1;
+}
+.creatSingleCards {
+  display: flex;
+  margin: 24px -4px 0;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.createCard {
+  flex-shrink: 0;
+  width: 160px;
+  margin: 0 4px;
+  padding: 24px;
+  border-radius: 16px;
+  background: #f4f5f6;
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.14286;
+  /* font-weight: 700; */
+  cursor: pointer;
+}
+
+.createPlus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.createSubtitle {
+
+}
+/* responsive */
+
 @media (max-width: 1339px) {
   .createSingle {
     padding: 80px 0;

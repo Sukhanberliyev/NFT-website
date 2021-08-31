@@ -101,7 +101,24 @@ const CreateSingle = () => {
                 </div>
               </div>
             </div>
-            <div className="createSingleOptions"></div>
+            <div className="createSingleOptions">
+              <div className="createSingleOptionCategory">
+                <div className="categoryBox">
+                  <p className="categoryTitle">Put on sale</p>
+                  <p className="categoryText">You will receive bids on this item</p>
+                </div>
+                <div className="switch"></div>
+              </div>
+              <div className="creatSingleCards">
+                <div className="createCard">
+                  <div className="createPlus">
+                    <img src="" alt="" /> 
+                  </div>
+                  <p className="createSubtitle">Create Collection</p>
+                </div>
+              </div>
+              {/* map or add 3 more times */}
+            </div>
             <div className="createSingleFoot"></div>
           </div>
         </div>
