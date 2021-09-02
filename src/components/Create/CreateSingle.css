@@ -112,13 +112,12 @@ textarea {
 
 .createSingleRow {
   display: flex;
-  /* margin: 0 -10px; */
+  margin: 0 -10px;
 }
 .createSingleColumn {
-  /* flex: 0 0 calc(33.333% - 20px); */
-  /* width: calc(33.333% - 20px); */
-  /* margin: 0 10px; */
-  width: 100%;
+  flex: 0 0 calc(33.333% - 20px);
+  width: calc(33.333% - 20px);
+  margin: 0 10px;
 }
 
 .createSingleColumnLabel {
@@ -143,9 +142,21 @@ textarea {
 .createSingleOptionCategory:not(:last-child) {
   margin-bottom: 32px;
 }
-.createBox {
+.categoryBox {
   flex-grow: 1;
 }
+.categoryTitle {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.categoryText {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+
 .creatSingleCards {
   display: flex;
   margin: 24px -4px 0;
@@ -176,11 +187,69 @@ textarea {
   height: 32px;
   border-radius: 50%;
   margin-bottom: 12px;
+  background-color: #3772ff;
+}
+.createPlus img {
+  opacity: 0;
 }
 
-.createSubtitle {
-
+.createCard:hover .createPlus img {
+  opacity: 1;
 }
+/* Switch */
+
+.switch {
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-size: 0;
+}
+.switchInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.switchInner {
+  position: relative;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.switchBox {
+  position: relative;
+  display: block;
+  width: 48px;
+  height: 24px;
+  background: #e6e8ec;
+  border-radius: 12px;
+  transition: all 0.2s;
+}
+
+.switchBox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3772ff;
+  transition: all 0.2s;
+}
+
+.upload .switch {
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+
 /* responsive */
 
 @media (max-width: 1339px) {
@@ -225,5 +294,8 @@ textarea {
   .createSingleColumn {
     width: 100%;
     margin: 0;
+  }
+  .createSingleColumn:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

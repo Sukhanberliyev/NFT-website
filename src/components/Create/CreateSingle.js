@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import "./CreateSingle.css";
 import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
+import MainButton from "../UI/MainButton";
 import Dropdown from "../UI/Dropdown";
-import add from "../../assets/icons/add.svg"; // adding icon
+// adding icon
+import add from "../../assets/icons/add.svg";
+import plus from "../../assets/icons/plus.svg";
 
 const CreateSingle = () => {
   return (
@@ -60,7 +63,7 @@ const CreateSingle = () => {
                   </div>
                   <div className="createSingleRow">
                     <div className="createSingleColumn">
-                      <div className="createSingleColumn">
+                      <div className="createSingleField">
                         <p className="createSingleColumnLabel">Royalty</p>
                         <div className="createSingleDropdown">
                           <Dropdown options={["10%", "20%", "30%"]} />
@@ -68,7 +71,7 @@ const CreateSingle = () => {
                       </div>
                     </div>
                     <div className="createSingleColumn">
-                      <div className="createSingleColumn">
+                      <div className="createSingleField">
                         <p className="createSingleColumnLabel">Size</p>
                         <div className="createSingleDropdown">
                           <input
@@ -83,7 +86,7 @@ const CreateSingle = () => {
                       </div>
                     </div>
                     <div className="createSingleColumn">
-                      <div className="createSingleColumn">
+                      <div className="createSingleField">
                         <p className="createSingleColumnLabel">Propertie</p>
                         <div className="createSingleDropdown">
                           <input
@@ -105,21 +108,95 @@ const CreateSingle = () => {
               <div className="createSingleOptionCategory">
                 <div className="categoryBox">
                   <p className="categoryTitle">Put on sale</p>
-                  <p className="categoryText">You will receive bids on this item</p>
+                  <p className="categoryText">
+                    You will receive bids on this item
+                  </p>
                 </div>
-                <div className="switch"></div>
+                <div className="switch">
+                  <input
+                    className="switchInput"
+                    type="checkbox"
+                    checked="checked"
+                  />
+                  <span className="switchInner">
+                    <span className="switchBox"></span>
+                  </span>
+                </div>
+              </div>
+              <div className="createSingleOptionCategory">
+                <div className="categoryBox">
+                  <p className="categoryTitle">Instant sale price</p>
+                  <p className="categoryText">
+                    Enter the price for which the item will be instantly sold
+                  </p>
+                </div>
+                <div className="switch">
+                  <input
+                    className="switchInput"
+                    type="checkbox"
+                    checked="checked"
+                  />
+                  <span className="switchInner">
+                    <span className="switchBox"></span>
+                  </span>
+                </div>
+              </div>
+              <div className="createSingleOptionCategory">
+                <div className="categoryBox">
+                  <p className="categoryTitle">Unlock once purchased</p>
+                  <p className="categoryText">
+                    Content will be unlocked after successful transaction
+                  </p>
+                </div>
+                <div className="switch">
+                  <input
+                    className="switchInput"
+                    type="checkbox"
+                    checked="checked"
+                  />
+                  <span className="switchInner">
+                    <span className="switchBox"></span>
+                  </span>
+                </div>
+              </div>
+              <div className="createSingleOptionCategory">
+                <div className="categoryBox">
+                  <p className="categoryTitle">Choose collection</p>
+                  <p className="categoryText">
+                    Choose an exiting collection or create a new one
+                  </p>
+                </div>
               </div>
               <div className="creatSingleCards">
                 <div className="createCard">
                   <div className="createPlus">
-                    <img src="" alt="" /> 
+                    <img src={plus} alt="" />
                   </div>
                   <p className="createSubtitle">Create Collection</p>
                 </div>
+                <div className="createCard">
+                  <div className="createPlus">
+                    <img src={plus} alt="" />
+                  </div>
+                  <p className="createSubtitle">Funny 3D Robot Alex</p>
+                </div>
+                <div className="createCard">
+                  <div className="createPlus">
+                    <img src={plus} alt="" />
+                  </div>
+                  <p className="createSubtitle">Justin the creator</p>
+                </div>
+                <div className="createCard">
+                  <div className="createPlus">
+                    <img src={plus} alt="" />
+                  </div>
+                  <p className="createSubtitle">Outlined celebrities</p>
+                </div>
               </div>
-              {/* map or add 3 more times */}
             </div>
-            <div className="createSingleFoot"></div>
+            <div className="createSingleFoot">
+              <MainButton>Create item</MainButton>
+            </div>
           </div>
         </div>
         <div className="createSinglePreview"></div>
