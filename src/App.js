@@ -5,7 +5,8 @@ import Home from "./pages/Home";
 import Discover from "./pages/Discover";
 import HowItWorks from "./pages/HowItWorks";
 import Upload from "./pages/Upload";
-import UploadDetails from "./pages/UploadDetails";
+import UploadSingle from "./pages/UploadSingle";
+import UploadMultiple from "./pages/UploadMultiple";
 import ConnectWallet from "./pages/ConnectWallet";
 import NftDetails from "./pages/NftDetails";
 
@@ -28,8 +29,11 @@ function App() {
         <Route path="/upload" exact>
           <Upload />
         </Route>
-        <Route path="/upload/:uploadId" exact>
-          <UploadDetails />
+        <Route path="/upload-single" exact>
+          <UploadSingle />
+        </Route>
+        <Route path="/upload-multiple" exact>
+          <UploadMultiple />
         </Route>
         <Route path="/connect-wallet" exact>
           <ConnectWallet />

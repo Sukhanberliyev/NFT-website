@@ -24,13 +24,15 @@ const Create = () => {
             <div className="uploadPreview">
               <img src={nftImage2} alt="img" />
             </div>
-            <Link to="/single" className="createBtn">Create Single</Link>
+            <Link to="/upload-single" className="createBtn">
+              Create Single
+            </Link>
           </div>
           <div className="uploadItem">
             <div className="uploadPreview">
               <img src={nftImage1} alt="img" />
             </div>
-            <Link className="createBtn">Create Multiple</Link>
+            <Link to="upload-multiple" className="createBtn">Create Multiple</Link>
           </div>
         </div>
         <p className="uploadNote">
