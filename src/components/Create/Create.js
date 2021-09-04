@@ -5,7 +5,6 @@ import nftImage2 from "../../assets/images/nftImage2.png";
 import nftImage1 from "../../assets/images/nftImage1.png";
 
 import "./Create.css";
-import UploadDetails from "../../pages/UploadDetails";
 
 const Create = () => {
   return (

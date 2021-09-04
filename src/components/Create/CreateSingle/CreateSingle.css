@@ -135,27 +135,6 @@ textarea {
 .createSingleOptions {
   margin-bottom: 40px;
 }
-.createSingleOptionCategory {
-  display: flex;
-  align-items: flex-start;
-}
-.createSingleOptionCategory:not(:last-child) {
-  margin-bottom: 32px;
-}
-.categoryBox {
-  flex-grow: 1;
-}
-.categoryTitle {
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
-}
-.categoryText {
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: 1.66667;
-  color: #777e90;
-}
 
 .creatSingleCards {
   display: flex;
@@ -175,7 +154,6 @@ textarea {
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 1.14286;
-  /* font-weight: 700; */
   cursor: pointer;
 }
 
@@ -195,54 +173,6 @@ textarea {
 
 .createCard:hover .createPlus img {
   opacity: 1;
-}
-/* Switch */
-
-.switch {
-  display: inline-block;
-  position: relative;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-size: 0;
-}
-.switchInput {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.switchInner {
-  position: relative;
-  display: inline-block;
-  transition: all 0.2s;
-}
-.switchBox {
-  position: relative;
-  display: block;
-  width: 48px;
-  height: 24px;
-  background: #e6e8ec;
-  border-radius: 12px;
-  transition: all 0.2s;
-}
-
-.switchBox::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #3772ff;
-  transition: all 0.2s;
 }
 
 .upload .switch {
