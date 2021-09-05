@@ -1,6 +1,10 @@
 .createSingle {
   padding: 128px 0px;
 }
+.createSingleContainer {
+  display: flex;
+  align-items: flex-start;
+}
 .createSingleWrapper {
   flex: 0 0 calc(100% - 352px);
   width: calc(100% - 352px);
@@ -180,6 +184,61 @@ textarea {
   margin-left: 24px;
 }
 
+.createSinglePreviews {
+  flex-shrink: 0;
+  width: 352px;
+}
+.previewInner {
+  padding: 48px;
+  background: #fcfcfd;
+  box-shadow: 0px 64px 64px rgb(31 47 70 / 12%);
+  border-radius: 16px;
+}
+
+.previewInfo {
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.previewClear {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #777e90;
+  transition: color 0.2s;
+}
+.previewClear svg {
+  margin-right: 5px;
+}
+.previewClear:hover {
+  color: #3772ff;
+}
+.previewClear svg {
+  width: 24px;
+  height: 24px;
+  fill: none;
+}
+
+.previewClear svg path {
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.previewClear svg circle {
+  fill: #777e90;
+}
+.previewClear:hover svg circle {
+  fill: #3772ff;
+}
+
 /* responsive */
 
 @media (max-width: 1339px) {
@@ -201,12 +260,21 @@ textarea {
   .createSingleButton {
     margin: 0 0 16px;
   }
+  .createSinglePreview {
+    width: 304px;
+  }
 }
 
 @media (max-width: 1023px) {
   .createSingleWrapper {
     width: 100%;
     padding: 0;
+  }
+  .createSingleContainer {
+    flex-direction: column;
+  }
+  .createSinglePreview {
+    width: 100%;
   }
 }
 
