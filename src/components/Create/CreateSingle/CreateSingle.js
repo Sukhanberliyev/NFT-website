@@ -28,7 +28,7 @@ const CreateSingle = () => {
           <div className="createWrapper">
             <div className="createHead">
               <h2 className="createTitle">Create single collectible</h2>
-              <Link className="createButton">
+              <Link to="/upload-multiple" className="createButton">
                 <OutlineButton>Switch to Multiple</OutlineButton>
               </Link>
             </div>
