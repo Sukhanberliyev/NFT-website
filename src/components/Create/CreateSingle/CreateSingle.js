@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import "./CreateSingle.css";
 import Container from "../../Layout/Container";
 import OutlineButton from "../../UI/OutlineButton";
-import CreateSingleTop from "./CreateSingleTop";
-import CreateSingleBottom from "./CreateSingleBottom";
+import CreateItemTop from "./CreateItemTop";
+import CreateItemBottom from "./CreateItemBottom";
 import Card from "../../UI/Card";
 
 import nftImage32 from "../../../assets/images/nftImage32.png";
@@ -22,22 +22,22 @@ const clearSvg = (
 
 const CreateSingle = () => {
   return (
-    <section className="createSingle">
+    <section className="create">
       <Container>
-        <div className="createSingleContainer">
-          <div className="createSingleWrapper">
-            <div className="createSingleHead">
-              <h2 className="createSingleTitle">Create single collectible</h2>
-              <Link className="createSingleButton">
+        <div className="createContainer">
+          <div className="createWrapper">
+            <div className="createHead">
+              <h2 className="createTitle">Create single collectible</h2>
+              <Link className="createButton">
                 <OutlineButton>Switch to Multiple</OutlineButton>
               </Link>
             </div>
-            <div className="createSingleForm">
-              <CreateSingleTop />
-              <CreateSingleBottom />
+            <div className="createForm">
+              <CreateItemTop />
+              <CreateItemBottom />
             </div>
           </div>
-          <div className="createSinglePreview">
+          <div className="createPreview">
             <div className="previewInner">
               <p className="previewInfo">Preview</p>
               <Card

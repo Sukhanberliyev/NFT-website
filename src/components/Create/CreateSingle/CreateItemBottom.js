@@ -1,6 +1,6 @@
 import React from "react";
 
-import CreateSingleOptionCategory from "./CreateSingleCategory";
+import CreateSingleOptionCategory from "./CreateCategory";
 import plus from "../../../assets/icons/plus.svg";
 import MainButton from "../../UI/MainButton";
 
@@ -25,7 +25,7 @@ const categories = [
 const CreateSingleBottom = () => {
   return (
     <div>
-      <div className="createSingleOptions">
+      <div className="createOptions">
         {categories.map((category) => (
           <CreateSingleOptionCategory
             key={category.id}
@@ -33,7 +33,7 @@ const CreateSingleBottom = () => {
             text={category.text}
           />
         ))}
-        <div className="creatSingleCards">
+        <div className="creatCards">
           <div className="createCard">
             <div className="createPlus">
               <img src={plus} alt="" />
@@ -60,7 +60,7 @@ const CreateSingleBottom = () => {
           </div>
         </div>
       </div>
-      <div className="createSingleFoot">
+      <div className="createFoot">
         <MainButton>Create item</MainButton>
       </div>
     </div>

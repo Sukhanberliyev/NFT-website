@@ -1,53 +1,53 @@
-.createSingle {
+.create {
   padding: 128px 0px;
 }
-.createSingleContainer {
+.createContainer {
   display: flex;
   align-items: flex-start;
 }
-.createSingleWrapper {
+.createWrapper {
   flex: 0 0 calc(100% - 352px);
   width: calc(100% - 352px);
-  padding-right: 128px;
+  padding-right: 100px;
 }
 
-.createSingleHead {
+.createHead {
   display: flex;
   margin-bottom: 40px;
 }
 
-.createSingleTitle {
+.createTitle {
   font-size: 48px;
   line-height: 1.16667;
   letter-spacing: -0.02em;
   margin-right: auto;
 }
 
-.createSingleButton {
+.createButton {
   flex-shrink: 0;
   margin-left: 24px;
   height: 55px;
 }
-.createSingleList {
+.createList {
   margin-bottom: 40px;
   padding-bottom: 40px;
   border-bottom: 1px solid #e6e8ec;
 }
-.createSingleItem:not(:last-child) {
+.createItem:not(:last-child) {
   margin-bottom: 40px;
 }
-.createSingleCategory {
+.createCategory {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 500;
 }
-.createSingleNote {
+.createNote {
   margin-top: 4px;
   font-size: 12px;
   line-height: 1.66667;
   color: #777e90;
 }
-.createSingleFile {
+.createFile {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -59,31 +59,31 @@
   overflow: hidden;
   background: #f4f5f6;
 }
-.createSingleInput {
+.createInput {
   position: absolute;
   top: 0;
   left: 0;
   font-size: 400px;
   opacity: 0;
 }
-.createSingleFormat {
+.createFormat {
   font-size: 12px;
   line-height: 1.66667;
   color: #777e90;
 }
 
-.createSingleIcon {
+.createIcon {
   margin-bottom: 10px;
 }
 
-.createSingleFieldset {
+.createFieldset {
   margin-top: 32px;
 }
 
-.createSingleField:not(:last-child) {
+.createField:not(:last-child) {
   margin-bottom: 32px;
 }
-.createSingleFieldLabel {
+.createFieldLabel {
   margin-bottom: 12px;
   font-size: 12px;
   line-height: 1;
@@ -91,7 +91,7 @@
   text-transform: uppercase;
   color: #b1b5c3;
 }
-.createSingleFieldInput {
+.createFieldInput {
   position: relative;
   height: 48px;
   padding: 0 14px;
@@ -114,17 +114,17 @@ textarea {
   -webkit-appearance: none;
 }
 
-.createSingleRow {
+.createRow {
   display: flex;
   margin: 0 -10px;
 }
-.createSingleColumn {
+.createColumn {
   flex: 0 0 calc(33.333% - 20px);
   width: calc(33.333% - 20px);
   margin: 0 10px;
 }
 
-.createSingleColumnLabel {
+.createColumnLabel {
   margin-bottom: 12px;
   font-size: 12px;
   line-height: 1;
@@ -132,15 +132,15 @@ textarea {
   text-transform: uppercase;
   color: #b1b5c3;
 }
-.createSingleDropdown {
+.createDropdown {
   position: relative;
 }
 
-.createSingleOptions {
+.createOptions {
   margin-bottom: 40px;
 }
 
-.creatSingleCards {
+.creatCards {
   display: flex;
   margin: 24px -4px 0;
   overflow-x: auto;
@@ -184,7 +184,7 @@ textarea {
   margin-left: 24px;
 }
 
-.createSinglePreviews {
+.createPreviews {
   flex-shrink: 0;
   width: 352px;
 }
@@ -242,22 +242,22 @@ textarea {
 /* responsive */
 
 @media (max-width: 1339px) {
-  .createSingle {
+  .create {
     padding: 80px 0;
   }
 }
 
 @media (max-width: 1179px) {
-  .createSingleWrapper {
+  .createWrapper {
     flex: 0 0 calc(100% - 304px);
     width: calc(100% - 304px);
     padding-right: 32px;
   }
-  .createSingleHead {
+  .createHead {
     flex-direction: column-reverse;
     align-items: flex-start;
   }
-  .createSingleButton {
+  .createButton {
     margin: 0 0 16px;
   }
   .createSinglePreview {
@@ -266,34 +266,34 @@ textarea {
 }
 
 @media (max-width: 1023px) {
-  .createSingleWrapper {
+  .createWrapper {
     width: 100%;
     padding: 0;
   }
-  .createSingleContainer {
+  .createContainer {
     flex-direction: column;
   }
-  .createSinglePreview {
+  .createPreview {
     width: 100%;
   }
 }
 
 @media (max-width: 1023px) {
-  .createSingleHead {
+  .createHead {
     margin-bottom: 32px;
   }
 }
 
 @media (max-width: 768px) {
-  .createSingleRow {
+  .createRow {
     display: block;
     margin: 0;
   }
-  .createSingleColumn {
+  .createColumn {
     width: 100%;
     margin: 0;
   }
-  .createSingleColumn:not(:last-child) {
+  .createColumn:not(:last-child) {
     margin-bottom: 20px;
   }
 }
