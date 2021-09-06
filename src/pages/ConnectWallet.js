@@ -1,9 +1,10 @@
 import React from 'react'
+import Wallet from '../components/Wallet/Wallet'
 
 const ConnectWallet = () => {
   return (
     <div>
-      <h1>This is Connect Wallet page</h1>
+      <Wallet />
     </div>
   )
 }
