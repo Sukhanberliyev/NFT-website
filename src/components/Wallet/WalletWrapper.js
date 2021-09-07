@@ -2,12 +2,14 @@ import React from "react";
 
 import OutlineButton from "../UI/OutlineButton";
 import MainButton from "../UI/MainButton";
+import connectWallet from "../../assets/images/connectWallet.jpg"
+import qrCode from "../../assets/images/qrCode.png"
 
 const WalletWrapper = () => {
   return (
     <div className="walletWrapper">
       <div className="walletBg">
-        <img src="" alt="" />
+        <img src={connectWallet} alt="" />
       </div>
       <div className="walletGroups">
         <div className="walletGroup">
@@ -15,10 +17,10 @@ const WalletWrapper = () => {
           <p className="walletText">Powered by Cryptonite Wallet</p>
           <div className="walletBox">
             <div className="walletCode">
-              <img src="" alt="" />
+              <img src={qrCode} alt="" />
             </div>
           </div>
-          <div className="walletButton"></div>
+          <OutlineButton>Don't have a wallet app?</OutlineButton>
         </div>
         <div className="walletGroup">
           <h3 className="walletTitle">Terms of service</h3>
@@ -28,18 +30,18 @@ const WalletWrapper = () => {
             accept the terms of services by checking the boxes.{" "}
           </p>
           <div className="walletPreview">
-            <img src="" alt="" />
+            <img src={connectWallet}  alt="" />
           </div>
           <div className="walletVariants">
             <label className="checkbox">
-              <input type="text" />
+              <input className="checkboxInput" type="checkbox" />
               <span className="checkboxInner">
                 <span className="checkboxTick"></span>
                 <span className="checkboxText">I am at least 13 years old</span>
               </span>
             </label>
             <label className="checkbox">
-              <input type="text" />
+            <input className="checkboxInput" type="checkbox" />
               <span className="checkboxInner">
                 <span className="checkboxTick"></span>
                 <span className="checkboxText">
@@ -48,7 +50,7 @@ const WalletWrapper = () => {
               </span>
             </label>
           </div>
-          <div className="walletBtn">
+          <div className="walletBtns">
             <OutlineButton>Cancel</OutlineButton>
             <MainButton>Get Started Now</MainButton>
           </div>

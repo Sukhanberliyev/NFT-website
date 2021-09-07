@@ -1,41 +1,41 @@
 .walletBody {
-	display: flex;
+  display: flex;
 }
 .walletMenu {
-	flex-shrink: 0;
-	width: 544px;
-	margin-right: auto;
+  flex-shrink: 0;
+  width: 544px;
+  margin-right: auto;
 }
 .walletLink {
-	position: relative;
-	display: flex;
-	align-items: center;
-	padding: 32px 64px 32px 32px;
-	border-radius: 12px;
-	font-size: 24px;
-	line-height: 1.33333;
-	font-weight: 600;
-	letter-spacing: -0.01em;
-	color: #23262f;
-	cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 32px 64px 32px 32px;
+  border-radius: 12px;
+  font-size: 24px;
+  line-height: 1.33333;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: #23262f;
+  cursor: pointer;
 }
 .walletIcon {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 64px;
-	height: 64px;
-	margin-right: 32px;
-	border-radius: 50%;
-	flex-shrink: 0;
-	background-color: #3772ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  margin-right: 32px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-color: #3772ff;
 }
 
 .walletIcon svg {
-	width: 24px;
-	height: 24px;
-	fill: none;
+  width: 24px;
+  height: 24px;
+  fill: none;
   stroke-width: 1.3;
 }
 .walletIcon svg rect {
@@ -50,22 +50,178 @@
 }
 
 .walletArrow {
-	position: absolute;
-	top: 50%;
-	right: 37px;
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-	opacity: 0;
-	transition: opacity 0.2s;
+  position: absolute;
+  top: 50%;
+  right: 37px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .walletArrow svg {
-	width: 14px;
-	height: 14px;
+  width: 14px;
+  height: 14px;
 }
 .walletArrow svg path {
-	stroke: #23262f;
-	stroke-width: 2.5;
-	stroke-linecap: round;
-	stroke-linejoin: round;
+  stroke: #23262f;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Wallet wrapper */
+
+.walletWrapper {
+  flex-grow: 1;
+  padding-left: 128px;
+}
+
+.walletBg {
+}
+.walletBg img {
+  width: 100%;
+  border-radius: 24px;
+}
+.walletGroup {
+  display: none;
+}
+.walletTitle {
+  margin-bottom: 8px;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+.walletText {
+  margin-bottom: 24px;
+  font-size: 12px;
+  line-height: 1.66667;
+  color: #777e90;
+}
+.walletBox {
+  margin-bottom: 24px;
+  padding: 18%;
+  background: #f4f5f6;
+  border-radius: 16px;
+}
+.walletCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 29%;
+  border-radius: 12px;
+  border: 1px solid #e6e8ec;
+  background: #fcfcfd;
+  cursor: pointer;
+  box-shadow: 0px 64px 64px -48px rgb(31 47 70 / 12%);
+}
+.walletCode img {
+  width: 100%;
+}
+.walletPreview {
+  margin: 40px 0;
+}
+.walletPreview img {
+  width: 100%;
+  border-radius: 12px;
+}
+.walletVariants {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.checkbox {
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.checkboxInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.checkboxInner {
+  display: flex;
+}
+.checkboxTick {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 2px solid #e6e8ec;
+  transition: all 0.2s;
+}
+.checkboxText {
+  line-height: 1.71429;
+  font-weight: 500;
+  color: #23262f;
+}
+.walletBtns {
+  display: flex;
+}
+
+@media (max-width: 1339px) {
+  .walletWrapper {
+    padding-left: 64px;
+  }
+}
+@media (max-width: 1179px) {
+  .walletMenu {
+    width: 384px;
+  }
+	.walletIcon {
+		margin-right: 24px;
+	}
+	.walletArrow {
+		right: 24px;
+	}
+}
+@media (max-width: 1023px) {
+  .walletWrapper {
+    padding-left: 32px;
+  }
+  .walletMenu {
+    width: 300px;
+  }
+  .walletLink {
+    padding: 0 30px 0 0;
+    font-size: 20px;
+  }
+  .walletLink:not(:last-child) {
+    margin-bottom: 24px;
+  }
+	.walletIcon {
+		margin-right: 16px;
+	}
+	.walletArrow {
+		right: 0px;
+	}
+}
+@media (max-width: 767px) {
+	.walletBody {
+		display: block;
+	}
+  .walletWrapper {
+    padding-left: 0px;
+  }
+  .walletTitle {
+    text-align: center;
+    font-size: 32px;
+  }
+  .walletText {
+    text-align: center;
+  }
+  .walletMenu {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
