@@ -1,6 +1,7 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React from "react";
+import { useParams } from "react-router-dom";
 
+import Nft from "../components/NFT/Nft";
 
 // importing NFTs
 import nftImage32 from "../assets/images/nftImage32.png";
@@ -123,16 +124,14 @@ const discoverNfts = [
 // create global dummy data and import it to every components where datas are necessary
 
 const NftDetails = () => {
-
   const params = useParams();
-  const {NftId} = params
+  const { NftId } = params;
 
   return (
     <div>
-      <h1>Hello</h1>
-      <h1>{params.NftId}</h1>
+      <Nft />
     </div>
-  )
-}
+  );
+};
 
-export default NftDetails
+export default NftDetails;
