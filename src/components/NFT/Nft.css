@@ -23,9 +23,14 @@
 	flex-wrap: wrap;
 	margin: -8px 0 0 -8px;
 }
-
+.nftTitle {
+	font-size: 40px;
+	line-height: 1.2;
+	letter-spacing: -0.01em;
+	margin-bottom: 8px;
+}
 .nftStatus {
-	margin: 8px 0 0 8px;
+	/* margin: 8px 0 0 8px; */
 	display: inline-block;
 	padding: 0 8px;
 	border-radius: 4px;
@@ -35,7 +40,6 @@
 	text-transform: uppercase;
 	color: #fcfcfd;
 }
-
 .statusBlack {
 	background-color: #23262f;
 }
@@ -57,7 +61,7 @@
 	align-items: center;
 	margin-bottom: 40px;
 }
-.itemPrice {
+.itemCost .itemPrice {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 16px;
 	line-height: 30px;
@@ -214,6 +218,7 @@
 	color: #23262f;
 }
 
+
 @media (max-width: 1339px) {
 	.nft {
 		padding: 112px 0px;
@@ -240,9 +245,27 @@
 	.nftBg {
 		margin: 0 0 32px;
 	}
+	.itemDetails {
+		width: 100%;
+	}
+	.itemControl {
+		margin-top: 0px;
+	}
 }
 @media (max-width: 1023px) {
 	.nft {
 		padding: 64px 0px;
+	}
+}
+@media (max-width: 819px) {
+	.itemControl {
+		margin-top: 32px;
+	}
+}
+@media (max-width: 767px) {
+	.itemControl {
+		margin-left: -16px;
+		margin-right: -16px;
+		padding: 16px;
 	}
 }

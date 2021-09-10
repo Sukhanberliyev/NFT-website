@@ -41,6 +41,18 @@ const ItemDetails = () => {
 									<p className='itemName'>Diana Moore</p>
 								</div>
 							</div>
+							<div className='itemUser'>
+								<div className='itemAvatar'>
+									<img src={creator11} alt='creator' />
+									<div className='itemReward'>
+										<img src={diamond} alt='' />
+									</div>
+								</div>
+								<div className='itemDescription'>
+									<p className='itemPosition'>Owner</p>
+									<p className='itemName'>Diana Moore</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
