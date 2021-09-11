@@ -1,0 +1,32 @@
+[
+	{
+		"id": "h1",
+		"nftImage": "/assets/images/nftImage10.png",
+		"title": "The creator road®",
+		"creatorImg": "/assets/avatars/creator1.png",
+		"creatorName": "Fur Elize",
+		"instantPrice": "3.5 ETH",
+		"currentBid": "1.00 ETH",
+		"realPrice": "$2,200.18"
+	},
+	{
+		"id": "h2",
+		"nftImage": "/assets/images/nftImage11.png",
+		"title": "Bitcoin holders®",
+		"creatorImg": "/assets/avatars/creator2.png",
+		"creatorName": "Joseph West",
+		"instantPrice": "0.9 ETH",
+		"currentBid": "0.9 ETH",
+		"realPrice": "$1,950.23"
+	},
+	{
+		"id": "h3",
+		"nftImage": "/assets/images/nftImage12.png",
+		"title": "Pinguine Sadali",
+		"creatorImg": "/assets/avatars/creator3.png",
+		"creatorName": "Joe Snow",
+		"instantPrice": "1 ETH",
+		"currentBid": "0.83 ETH",
+		"realPrice": "$1,890.78"
+	}
+]

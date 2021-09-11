@@ -1,0 +1,26 @@
+[
+	{
+		"id": "sh1",
+		"nftImage": "/assets/images/nftImage22.png",
+		"title": "Dead Inside",
+		"creatorImg": "/assets/avatars/creator4.png",
+		"currentBid": "02.00 ETH",
+		"amount": "1 of 8"
+	},
+	{
+		"id": "sh2",
+		"nftImage": "/assets/images/nftImage25.png",
+		"title": "Leap forward to the sky",
+		"creatorImg": "/assets/avatars/creator5.png",
+		"currentBid": "0.9 ETH",
+		"amount": "6 of 12"
+	},
+	{
+		"id": "sh1",
+		"nftImage": "/assets/images/nftImage24.png",
+		"title": "Coronagirl",
+		"creatorImg": "/assets/avatars/creator6.png",
+		"currentBid": "0.09 ETH",
+		"amount": "5 of 5"
+	}
+]
