@@ -5,35 +5,12 @@ import Container from "../Layout/Container";
 import Dropdown from "../UI/Dropdown";
 import "./FAQ.css";
 import FAQItem from "./FAQItem";
+import FaqDataOne from "../../data/FaqData/FaqOne.json"
+import FaqDataTwo from "../../data/FaqData/FaqTwo.json"
 
 const faqOptions = ["General", "Support", "Hosting", "Product"];
 
-const faqLists = [
-  {
-    id: "f1",
-    title: "NFT? ERC-721 tokens?",
-    description:
-      "NFT stands for non-fungible tokens like ERC-721 (a smart contract standard) tokens which are hosted on Ethereum’s own blockchain. NFTs are unique digital items such as collectibles or artworks or game items. As an artist, by tokenizing your work you both ensure that it is unique and brand it as your work. The actual ownership is blockchain-managed.",
-  },
-  {
-    id: "f2",
-    title: "What is a crypto wallet?",
-    description:
-      "A crypto wallet is an application or hardware device that allows individuals to store and transfer digital assets like cryptocurrencies and Non-Fungible Tokens (NFTs). This guide breaks down the crypto wallet basics that you'll need to know before creating and trading items on Cryptonite.",
-  },
-  {
-    id: "f3",
-    title: "What crypto wallets can I use with Cryptonite?",
-    description:
-      "Just as there are many banks and credit cards, there are many different crypto wallet providers to choose from. They all serve the same purpose, but each one takes a different approach and makes different tradeoffs.",
-  },
-  {
-    id: "f4",
-    title: "How do I purchase Ethereum (ETH)?",
-    description:
-      "Ether is the native currency of the Ethereum network and it’s commonly abbreviated to ETH, which is its ticker symbol. You need ETH to pay for some of your interactions with the blockchain and to pay for the items you buy.",
-  },
-];
+
 
 const FAQ = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -90,7 +67,7 @@ const FAQ = () => {
               className={toggleState === 1 ? "faqBox active" : "faqBox"}
               onClick={() => toggleTab(1)}
             >
-              {faqLists.map((faqList) => (
+              {FaqDataOne.map((faqList) => (
                 <FAQItem
                   key={faqList.id}
                   title={faqList.title}
@@ -102,7 +79,7 @@ const FAQ = () => {
               className={toggleState === 2 ? "faqBox active" : "faqBox"}
               onClick={() => toggleTab(2)}
             >
-              {faqLists.map((faqList) => (
+              {FaqDataTwo.map((faqList) => (
                 <FAQItem
                   key={faqList.id}
                   title={faqList.title}
@@ -114,7 +91,7 @@ const FAQ = () => {
               className={toggleState === 3 ? "faqBox active" : "faqBox"}
               onClick={() => toggleTab(3)}
             >
-              {faqLists.map((faqList) => (
+              {FaqDataOne.map((faqList) => (
                 <FAQItem
                   key={faqList.id}
                   title={faqList.title}
@@ -126,7 +103,7 @@ const FAQ = () => {
               className={toggleState === 4 ? "faqBox active" : "faqBox"}
               onClick={() => toggleTab(4)}
             >
-              {faqLists.map((faqList) => (
+              {FaqDataTwo.map((faqList) => (
                 <FAQItem
                   key={faqList.id}
                   title={faqList.title}

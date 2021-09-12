@@ -1,0 +1,26 @@
+[
+  {
+    "id": "c1",
+    "creatorImage": "/assets/avatars/creator10.png",
+    "name": "Jess Green",
+    "amount": "2.456"
+  },
+  {
+    "id": "c2",
+    "creatorImage": "/assets/avatars/creator11.png",
+    "name": "Fred Arthur",
+    "amount": "2.322"
+  },
+  {
+    "id": "c3",
+    "creatorImage": "/assets/avatars/creator12.png",
+    "name": "Alan Irwing",
+    "amount": "2.213"
+  },
+  {
+    "id": "c4",
+    "creatorImage": "/assets/avatars/creator13.png",
+    "name": "Talia Snow",
+    "amount": "2.199"
+  }
+]

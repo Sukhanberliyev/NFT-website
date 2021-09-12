@@ -3,12 +3,10 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import classes from "./HeroSection.module.css";
 import "./ReactSlick.css";
 import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
-
 import HeroItem from "./HeroItem";
 
 const HeroSection = (props) => {

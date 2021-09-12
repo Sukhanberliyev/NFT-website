@@ -1,0 +1,22 @@
+[
+  {
+    "id": "f1",
+    "title": "NFT? ERC-721 tokens?",
+    "description": "NFT stands for non-fungible tokens like ERC-721 (a smart contract standard) tokens which are hosted on Ethereum’s own blockchain. NFTs are unique digital items such as collectibles or artworks or game items. As an artist, by tokenizing your work you both ensure that it is unique and brand it as your work. The actual ownership is blockchain-managed."
+  },
+  {
+    "id": "f2",
+    "title": "What is a crypto wallet?",
+    "description": "A crypto wallet is an application or hardware device that allows individuals to store and transfer digital assets like cryptocurrencies and Non-Fungible Tokens (NFTs). This guide breaks down the crypto wallet basics that you'll need to know before creating and trading items on Cryptonite."
+  },
+  {
+    "id": "f3",
+    "title": "What crypto wallets can I use with Cryptonite?",
+    "description": "Just as there are many banks and credit cards, there are many different crypto wallet providers to choose from. They all serve the same purpose, but each one takes a different approach and makes different tradeoffs."
+  },
+  {
+    "id": "f4",
+    "title": "How do I purchase Ethereum (ETH)?",
+    "description": "Ether is the native currency of the Ethereum network and it’s commonly abbreviated to ETH, which is its ticker symbol. You need ETH to pay for some of your interactions with the blockchain and to pay for the items you buy."
+  }
+]

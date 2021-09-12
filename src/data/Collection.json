@@ -1,0 +1,35 @@
+[
+  {
+    "id": "c1",
+    "collectionImg1": "/assets/images/nftImage1.png",
+    "collectionImg2": "/assets/images/nftImage2.png",
+    "collectionImg3": "/assets/images/nftImage7.png",
+    "collectionImg4": "assets/images/nftImage8.png",
+    "title": "Crazy collection",
+    "creator": "/assets/avatars/creator8.png",
+    "name": "Julia Maystruk",
+    "amount": "28"
+  },
+  {
+    "id": "c2",
+    "collectionImg1": "/assets/images/nftImage9.png",
+    "collectionImg2": "/assets/images/nftImage4.png",
+    "collectionImg3": "/assets/images/nftImage6.png",
+    "collectionImg4": "assets/images/nftImage5.png",
+    "title": "Crypto collection",
+    "creator": "/assets/avatars/creator8.png",
+    "name": "Julia Maystruk",
+    "amount": "19"
+  },
+  {
+    "id": "c3",
+    "collectionImg1": "/assets/images/nftImage19.png",
+    "collectionImg2": "/assets/images/nftImage18.png",
+    "collectionImg3": "/assets/images/nftImage17.png",
+    "collectionImg4": "assets/images/nftImage20.png",
+    "title": "CryptoWorld",
+    "creator": "/assets/avatars/creator30.png",
+    "name": "Ilias Sounas",
+    "amount": "15"
+  }
+]

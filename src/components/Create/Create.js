@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import nftImage2 from "../../assets/images/nftImage2.png";
 import nftImage1 from "../../assets/images/nftImage1.png";

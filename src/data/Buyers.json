@@ -1,0 +1,74 @@
+[
+  {
+    "id": "u1",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "1",
+    "creatorImg": "/assets/avatars/creator1.png",
+    "name": "Name goes here",
+    "amount": "5.1"
+  },
+  {
+    "id": "u2",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "2",
+    "creatorImg": "/assets/avatars/creator2.png",
+    "name": "Name goes here",
+    "amount": "4.7"
+  },
+  {
+    "id": "u3",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "3",
+    "creatorImg": "/assets/avatars/creator3.png",
+    "name": "Name goes here",
+    "amount": "4.5"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/ball.svg",
+    "rank": "4",
+    "creatorImg": "/assets/avatars/creator4.png",
+    "name": "Name goes here",
+    "amount": "4.4"
+  },
+  {
+    "id": "u5",
+    "svg": "/assets/icons/ball.svg",
+    "rank": "5",
+    "creatorImg": "/assets/avatars/creator5.png",
+    "name": "Name goes here",
+    "amount": "4.3"
+  },
+  {
+    "id": "u6",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "6",
+    "creatorImg": "/assets/avatars/creator6.png",
+    "name": "Name goes here",
+    "amount": "3.9"
+  },
+  {
+    "id": "u7",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "7",
+    "creatorImg": "/assets/avatars/creator7.png",
+    "name": "Name goes here",
+    "amount": "3.4"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "8",
+    "creatorImg": "/assets/avatars/creator8.png",
+    "name": "Name goes here",
+    "amount": "2.9"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "9",
+    "creatorImg": "/assets/avatars/creator9.png",
+    "name": "Name goes here",
+    "amount": "2.5"
+  }
+]

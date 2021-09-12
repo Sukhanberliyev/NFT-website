@@ -1,0 +1,74 @@
+[
+  {
+    "id": "u1",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "1",
+    "creatorImg": "/assets/avatars/creator20.png",
+    "name": "Ruby Gallagher",
+    "amount": "5.1"
+  },
+  {
+    "id": "u2",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "2",
+    "creatorImg": "/assets/avatars/creator22.png",
+    "name": "Joseph Miller",
+    "amount": "4.7"
+  },
+  {
+    "id": "u3",
+    "svg": "/assets/icons/cup.svg",
+    "rank": "3",
+    "creatorImg": "/assets/avatars/creator11.png",
+    "name": "Ella Rose",
+    "amount": "4.5"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/ball.svg",
+    "rank": "4",
+    "creatorImg": "/assets/avatars/creator24.png",
+    "name": "Jayden Wattson",
+    "amount": "4.4"
+  },
+  {
+    "id": "u5",
+    "svg": "/assets/icons/ball.svg",
+    "rank": "5",
+    "creatorImg": "/assets/avatars/creator31.png",
+    "name": "Thomas Harper",
+    "amount": "4.3"
+  },
+  {
+    "id": "u6",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "6",
+    "creatorImg": "/assets/avatars/creator25.png",
+    "name": "Megan Hayes",
+    "amount": "3.9"
+  },
+  {
+    "id": "u7",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "7",
+    "creatorImg": "/assets/avatars/creator19.png",
+    "name": "Jasmine White",
+    "amount": "3.4"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "8",
+    "creatorImg": "/assets/avatars/creator15.png",
+    "name": "Aaron Austin",
+    "amount": "2.9"
+  },
+  {
+    "id": "u4",
+    "svg": "/assets/icons/flame.svg",
+    "rank": "9",
+    "creatorImg": "/assets/avatars/creator14.png",
+    "name": "Sarah Cooke",
+    "amount": "2.5"
+  }
+]
