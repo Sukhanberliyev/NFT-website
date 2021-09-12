@@ -130,7 +130,7 @@
 .marketplaceReset {
   display: flex;
   align-items: center;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 14px;
   line-height: 1.14286;
   font-weight: 600;
@@ -143,8 +143,8 @@
   margin-right: 8px;
 }
 .loadBtn {
-   margin-top: 32px;
-   width: 130px;
+  margin-top: 32px;
+  width: 130px;
   position: relative;
   bottom: 0px;
   left: 40%;
