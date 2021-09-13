@@ -40,7 +40,10 @@
   color: #777e90;
   transition: all 0.2s;
 }
-
+.discoverLink.active {
+  background: #353945;
+  color: #fcfcfd;
+}
 .tabletShow {
   display: none !important;
 }

@@ -72,6 +72,7 @@ const dropdowns = [
 
 const MainDiscover = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [tabMenuState, setTabMenuState] = useState(1);
 
 	const tabletDropdown = ['All items', 'Art', 'Game', 'Photography', 'Music', 'Video'];
 	const mySlider = settings;
@@ -79,6 +80,10 @@ const MainDiscover = () => {
 	const filterHandler = () => {
 		setIsOpen(!isOpen);
 	};
+
+  const tabHandler = (index) => {
+    setTabMenuState(index);
+  };
 
 	return (
 		<section className='discover'>
@@ -89,12 +94,12 @@ const MainDiscover = () => {
 						<Dropdown options={['Recently added', 'Long added']} />
 					</div>
 					<div className='discoverNav'>
-						<Link className='discoverLink'>All items</Link>
-						<Link className='discoverLink'>Art</Link>
-						<Link className='discoverLink'>Game</Link>
-						<Link className='discoverLink'>Photography</Link>
-						<Link className='discoverLink'>Music</Link>
-						<Link className='discoverLink'>Video</Link>
+						<Link onClick={() => tabHandler(1)} className={tabMenuState === 1 ? "discoverLink active" : "discoverLink"}>All items</Link>
+						<Link onClick={() => tabHandler(2)} className={tabMenuState === 2 ? "discoverLink active" : "discoverLink"}>Art</Link>
+						<Link onClick={() => tabHandler(3)} className={tabMenuState === 3 ? "discoverLink active" : "discoverLink"}>Game</Link>
+						<Link onClick={() => tabHandler(4)} className={tabMenuState === 4 ? "discoverLink active" : "discoverLink"}>Photography</Link>
+						<Link onClick={() => tabHandler(5)} className={tabMenuState === 5 ? "discoverLink active" : "discoverLink"}>Music</Link>
+						<Link onClick={() => tabHandler(6)} className={tabMenuState === 6 ? "discoverLink active" : "discoverLink"}>Video</Link>
 					</div>
 					<div className='tabletShow'>
 						<Dropdown options={tabletDropdown} />
