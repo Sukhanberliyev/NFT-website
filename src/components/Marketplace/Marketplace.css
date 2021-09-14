@@ -227,6 +227,9 @@
   .loadBtn {
     left: 35%;
   }
+  .marketplaceList.active {
+    display: block;
+  }
 }
 
 @media (max-width: 435px) {

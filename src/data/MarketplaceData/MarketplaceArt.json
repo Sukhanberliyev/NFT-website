@@ -1,0 +1,35 @@
+[
+	{
+		"id": "h1",
+		"mainNft": "/assets/images/nftImage34.png",
+		"title": "Tauren Valley",
+		"bid": "2.45",
+		"creator1": "/assets/avatars/creator1.png",
+		"creator2": "/assets/avatars/creator2.png",
+		"creator3": "/assets/avatars/creator3.png",
+		"amount": "5",
+		"price": "0.13"
+	},
+	{
+		"id": "h2",
+		"mainNft": "/assets/images/nftImage32.png",
+		"title": "Space Park",
+		"bid": "2.45",
+		"creator1": "/assets/avatars/creator15.png",
+		"creator2": "/assets/avatars/creator16.png",
+		"creator3": "/assets/avatars/creator17.png",
+		"amount": "1",
+		"price": "0.1"
+	},
+	{
+		"id": "h3",
+		"mainNft": "/assets/images/nftImage31.png",
+		"title": "Ethereuminisation",
+		"bid": "2.35",
+		"creator1": "/assets/avatars/creator7.png",
+		"creator2": "/assets/avatars/creator8.png",
+		"creator3": "/assets/avatars/creator9.png",
+		"amount": "10",
+		"price": "0.09"
+	}
+]

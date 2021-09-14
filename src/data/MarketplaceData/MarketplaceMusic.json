@@ -1,0 +1,24 @@
+[
+	{
+		"id": "h4",
+		"mainNft": "/assets/images/nftImage36.png",
+		"title": "Android Disco",
+		"bid": "2.15",
+		"creator1": "/assets/avatars/creator10.png",
+		"creator2": "/assets/avatars/creator11.png",
+		"creator3": "/assets/avatars/creator12.png",
+		"amount": "1",
+		"price": "0.2"
+	},
+	{
+		"id": "h9",
+		"mainNft": "/assets/images/nftImage35.png",
+		"title": "Tokeno-active",
+		"bid": "2.01",
+		"creator1": "/assets/avatars/creator5.png",
+		"creator2": "/assets/avatars/creator2.png",
+		"creator3": "/assets/avatars/creator10.png",
+		"amount": "10",
+		"price": "0.09"
+	}
+]
