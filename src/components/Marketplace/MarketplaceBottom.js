@@ -6,6 +6,8 @@ import MarketplaceDropdown from "./MarketplaceDropdown";
 import Card from "../UI/Card";
 import OutlineButton from "../UI/OutlineButton";
 import MarketplaceData from "../../data/Discover.json"; // importing DUMMYDATA
+import MarketplaceDataOne from "../../data/MarketplaceData/Marketplace.json";
+import MarketplaceDataTwo from "../../data/MarketplaceData/MarketplaceTwo.json";
 import reset from "../../assets/icons/reset.svg"; // importing icons
 
 const dropdowns = [
@@ -100,8 +102,32 @@ const MarketplaceBottom = () => {
           </div>
         </div>
         <div className="marketplaceWrapper">
-          <div className="marketplaceList">
-            {MarketplaceData.map((marketplaceNft) => (
+          <div
+            className={
+              tabMenuState === 1 ? "marketplaceList active" : "marketplaceList"
+            }
+          >
+            {MarketplaceDataOne.map((marketplaceNft) => (
+              <div key={marketplaceNft.id} className="marketplaceCard">
+                <Card
+                  mainNft={marketplaceNft.mainNft}
+                  title={marketplaceNft.title}
+                  bid={marketplaceNft.bid}
+                  creator1={marketplaceNft.creator1}
+                  creator2={marketplaceNft.creator2}
+                  creator3={marketplaceNft.creator3}
+                  amount={marketplaceNft.amount}
+                  price={marketplaceNft.price}
+                />
+              </div>
+            ))}
+          </div>
+          <div
+            className={
+              tabMenuState === 2 ? "marketplaceList active" : "marketplaceList"
+            }
+          >
+            {MarketplaceDataTwo.map((marketplaceNft) => (
               <div key={marketplaceNft.id} className="marketplaceCard">
                 <Card
                   mainNft={marketplaceNft.mainNft}

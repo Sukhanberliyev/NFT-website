@@ -69,6 +69,12 @@
 .marketplaceNav {
   display: flex;
 }
+.marketplaceList {
+  display: none;
+}
+.marketplaceList.active {
+  display: flex;
+}
 
 .marketplaceLink {
   flex-shrink: 0;

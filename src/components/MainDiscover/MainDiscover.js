@@ -162,3 +162,4 @@ const MainDiscover = () => {
 };
 
 export default MainDiscover;
+
