@@ -4,20 +4,23 @@ import { Link } from "react-router-dom";
 // importing css
 import "./Card.css";
 
-// importing components
-import Bid from "../UI/Bid";
-
-// importing icons
-import candles from "../../assets/icons/candles.svg";
-import candle from "../../assets/icons/candle.svg";
-// import LikBtn from "../../assets/icons/heart.svg";
-
-// const heartSvg = (
-
-// );
+import Bid from "../UI/Bid"; // importing components
+import PlaceBid from "./Modals/PlaceBid";
+import Backdrop from "./Backdrop";
+import candles from "../../assets/icons/candles.svg"; // importing icons
+import candle from "../../assets/icons/candle.svg"; // importing icons
 
 const Card = (props) => {
   const [click, setClick] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const bidHandler = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModalHandler = () => {
+    setModalIsOpen(false);
+  };
 
   const likeButtonHandler = () => {
     setClick(!click);
@@ -50,7 +53,7 @@ const Card = (props) => {
               </g>
             </svg>
           </div>
-          <button className="cardButton">
+          <button onClick={bidHandler} className="cardButton">
             Place a bid
             <img src={candle} alt="icon" />
           </button>
@@ -87,6 +90,10 @@ const Card = (props) => {
           <p className="cardBid">New Bid🔥</p>
         </div>
       </Link>
+      {modalIsOpen && (
+        <PlaceBid onClick={bidHandler} onConfirm={closeModalHandler} />
+      )}
+      {modalIsOpen && <Backdrop onClick={closeModalHandler} />}
     </div>
   );
 };
