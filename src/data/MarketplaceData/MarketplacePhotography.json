@@ -1,14 +1,14 @@
 [
 	{
 		"id": "h1",
-		"mainNft": "/assets/images/nftImage36.png",
-		"title": "Android Disco",
-		"bid": "2.15",
-		"creator1": "/assets/avatars/creator10.png",
-		"creator2": "/assets/avatars/creator11.png",
-		"creator3": "/assets/avatars/creator12.png",
-		"amount": "1",
-		"price": "0.2"
+		"mainNft": "/assets/images/nftImage30.png",
+		"title": "Waterflame",
+		"bid": "2.37",
+		"creator1": "/assets/avatars/creator4.png",
+		"creator2": "/assets/avatars/creator5.png",
+		"creator3": "/assets/avatars/creator6.png",
+		"amount": "10",
+		"price": "0.12"
 	},
 	{
 		"id": "h2",

@@ -150,7 +150,7 @@ const MarketplaceBottom = () => {
 					</div>
 					<div className={tabMenuState === 5 ? 'marketplaceList active' : 'marketplaceList'}>
 						<div className='marketplaceCard'>
-							<p>The video hasn't been added yet</p>
+							<p>No videos found</p>
 						</div>
 					</div>
 					<div className='loadBtn'>
