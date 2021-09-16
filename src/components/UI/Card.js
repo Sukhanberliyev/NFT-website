@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// importing css
-import "./Card.css";
-
+import "./Card.css";// importing css
 import Bid from "../UI/Bid"; // importing components
 import PlaceBid from "./Modals/PlaceBid";
-import Backdrop from "./Backdrop";
 import candles from "../../assets/icons/candles.svg"; // importing icons
 import candle from "../../assets/icons/candle.svg"; // importing icons
 
@@ -93,7 +90,7 @@ const Card = (props) => {
       {modalIsOpen && (
         <PlaceBid onClick={bidHandler} onConfirm={closeModalHandler} />
       )}
-      {modalIsOpen && <Backdrop onClick={closeModalHandler} />}
+      {/* {modalIsOpen && <Backdrop onClick={closeModalHandler} />} */}
     </div>
   );
 };
