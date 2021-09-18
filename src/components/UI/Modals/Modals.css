@@ -1,0 +1,143 @@
+/********************************* Place a Bid start **********************************/
+.modalCenter {
+	position: fixed;
+	top: 25vh;
+	left: 25vw;
+	z-index: 1010;
+	max-width: 448px;
+	width: 100%;
+}
+.modal {
+	position: relative;
+	margin: 15px auto;
+	padding: 32px;
+	background: #fcfcfd;
+	border-radius: 16px;
+	/* width: 100%; */
+}
+.modalTitle {
+	margin-bottom: 32px;
+	font-size: 32px;
+	line-height: 1.25;
+	letter-spacing: -0.01em;
+}
+.modalInfo {
+	margin-bottom: 32px;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.modalSubtitle {
+	margin-bottom: 16px;
+	font-size: 24px;
+	line-height: 1.33333;
+	font-weight: 600;
+	letter-spacing: -0.01em;
+}
+.modalRow {
+	display: flex;
+	padding-top: 12px;
+}
+
+.modalRow:first-child {
+	padding: 0 0 12px;
+	border-bottom: 1px solid #e6e8ec;
+	font-weight: 500;
+}
+.modalColumn {
+	font-size: 16px;
+	line-height: 1.5;
+}
+.modalColumn:first-child {
+	color: #777e90;
+}
+.modalColumn:nth-child(2) {
+	margin-left: auto;
+	padding-left: 20px;
+	font-weight: 500;
+}
+.modalBid {
+	display: flex;
+	align-items: center;
+}
+
+.modalRate {
+	min-width: 100px;
+	height: 24px;
+	background: none;
+	border: none;
+	text-align: right;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+}
+.modalCurrency {
+	margin-left: 4px;
+}
+.modalBtns {
+	margin-top: 32px;
+}
+
+.modalBtn:first-child {
+	margin-bottom: 15px;
+}
+.closeBtn {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #e6e8ec;
+	border-radius: 50%;
+	line-height: normal;
+	opacity: 1;
+	font-size: 0;
+	transition: all 0.2s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	background: #fcfcfd;
+	color: #333;
+	cursor: pointer;
+}
+.closeBtn:hover {
+	border: 2px solid #333;
+}
+.closeBtn svg {
+	width: 20px;
+	height: 20px;
+	fill: none;
+}
+.closeBtn svg path {
+	stroke: #333;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/********************************* Place a Bid end **********************************/
+
+/********************************* Connect wallet start **********************************/
+.connectWalletImg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80px;
+	height: 80px;
+	margin: 72px auto 32px;
+	border-radius: 50%;
+	background: #3772ff;
+}
+.connectWalletDescription {
+	margin-bottom: 32px;
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.5;
+}
+.connectWalletDescription span {
+	font-weight: 500;
+}
+/********************************* Connect wallet end **********************************/
+
+@media (max-width: 900px) {
+	.modalCenter {
+		padding: 0 16px;
+	}
+}

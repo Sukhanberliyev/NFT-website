@@ -58,9 +58,17 @@
   justify-content: center;
   cursor: pointer;
 }
-.heart {
+.likeBtn svg {
   width: 24px;
   height: 24px;
+  fill: none;
+}
+.likeBtn svg path {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  stroke-width: 2.75;
+}
+.heart {
   stroke: #777E90;
   transition: all .2s;
 }
