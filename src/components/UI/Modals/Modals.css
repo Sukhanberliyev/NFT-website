@@ -1,10 +1,13 @@
 /********************************* Place a Bid start **********************************/
 .modalCenter {
 	position: fixed;
-	top: 25vh;
-	left: 25vw;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	z-index: 1010;
-	max-width: 448px;
+	height: 100%;
 	width: 100%;
 }
 .modal {
@@ -13,7 +16,8 @@
 	padding: 32px;
 	background: #fcfcfd;
 	border-radius: 16px;
-	/* width: 100%; */
+	max-width: 448px;
+	width: 100%;
 }
 .modalTitle {
 	margin-bottom: 32px;

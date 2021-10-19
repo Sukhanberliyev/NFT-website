@@ -25,9 +25,10 @@ const HeroSection = (props) => {
       ],
       typeSpeed: 50,
       backSpeed: 50,
-      showCursor: true,
-      cursorChar: "|",
-      autoInsertCss: true,
+      loop:true,
+      // showCursor: false,
+      // cursorChar: "|",
+      // autoInsertCss: true,
     };
 
     // elRef refers to the <span> rendered below
