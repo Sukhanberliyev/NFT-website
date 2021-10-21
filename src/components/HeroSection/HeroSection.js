@@ -19,14 +19,15 @@ const HeroSection = (props) => {
   useEffect(() => {
     const options = {
       strings: [
-        "<span>The new creative</span> <span>economy</span>",
-        "<span>Create your dream</span> <span>gallery</span>",
-        "<span>Discover, and</span> <span>collect NFTs</span>",
+        "<span>The new creative</span> </br> <span>economy</span>",
+        "<span>The new creative</span> </br> <span>gallery</span>",
+        "<span>The new creative</span> </br> <span>world</span>",
       ],
       typeSpeed: 50,
       backSpeed: 50,
-      loop:true,
-      // showCursor: false,
+      loop: true,
+      smartBackspace: true,
+      showCursor: true,
       // cursorChar: "|",
       // autoInsertCss: true,
     };
@@ -56,7 +57,9 @@ const HeroSection = (props) => {
         <main className={classes.main}>
           <div className={classes.mainHead}>
             <p>CREATE, EXPLORE, & COLLECT DIGITAL ART NFTs.</p>
-            <h3 style={{ whiteSpace: "pre" }} ref={el} />
+            <div className="type-wrap">
+              <span className="typing" style={{ whiteSpace: "pre" }} ref={el} />
+            </div>
             <div className={classes.heroButton}>
               <OutlineButton>Start your search</OutlineButton>
             </div>

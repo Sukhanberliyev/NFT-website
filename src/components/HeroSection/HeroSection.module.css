@@ -7,7 +7,6 @@
   justify-content: center;
   max-width: 600px;
   margin: 0px auto 128px;
-  text-align: center;
   align-items: center;
   text-align: center;
 }
@@ -19,14 +18,20 @@
   margin-bottom: 10px;
   width: 100%;
 }
-.mainHead h3 {
+.mainHead span {
   font-size: 40px;
+  font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.01em;
+  margin: 24px auto;
   margin-bottom: 24px;
+}
+.mainHead br {
+  display: none;
 }
 
 .heroButton {
+  margin-top: 24px;
   width: 200px;
 }
 /* Adding CSS manually is only necessary in JSFiddle,
@@ -66,12 +71,15 @@
   .main {
     padding: 64px 0px;
   }
-  .mainHead h3 {
+  .mainHead span {
     font-size: 32px;
   }
   .mainHead h3 span {
     display: block;
     line-height: 10px;
+  }
+  .mainHead br {
+    display: block;
   }
 }
 
