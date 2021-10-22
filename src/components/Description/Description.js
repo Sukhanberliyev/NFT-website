@@ -5,8 +5,6 @@ import OutlineButton from "../UI/OutlineButton";
 
 // importing css
 import classes from "./Description.module.css";
-// importing image
-import processor from "../../assets/images/processor.png"
 
 const Description = () => {
   return (
@@ -27,7 +25,7 @@ const Description = () => {
         </div>
         <div className={classes.descriptionGallery}>
           <div className={classes.descriptionPreview}>
-            <img src={processor} alt="CTA" />
+            <img src="/assets/images/moneyJar.svg" alt="CTA" />
           </div>
         </div>
       </Container>

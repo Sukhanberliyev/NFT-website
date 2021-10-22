@@ -6,7 +6,7 @@ import WalletWrapper from './WalletWrapper';
 
 import './Wallet.css';
 
-const coldWallets = [
+const hotWallets = [
 	{
 		id: 'w1',
 		name: 'Coinbase Wallet',
@@ -27,8 +27,8 @@ const Wallet = () => {
 			<Container>
 				<div className='walletBody'>
 					<ul className='walletMenu'>
-						{coldWallets.map((coldWallet) => (
-							<WalletItem key={coldWallet.id} name={coldWallet.name} />
+						{hotWallets.map((hotWallet) => (
+							<WalletItem key={hotWallet.id} name={hotWallet.name} />
 						))}
 					</ul>
 					<WalletWrapper />

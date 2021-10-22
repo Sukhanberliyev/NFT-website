@@ -9,7 +9,7 @@ const WalletWrapper = () => {
   return (
     <div className="walletWrapper">
       <div className="walletBg">
-        <img src={connectWallet} alt="" />
+        <img src="/assets/images/ethereum.svg" alt="" />
       </div>
       <div className="walletGroups">
         <div className="walletGroup">
