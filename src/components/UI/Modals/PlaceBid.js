@@ -18,7 +18,7 @@ const BidOverlayModal = (props) => {
 
   return (
     <div className="modalContainer">
-      <div className="modalCenter">
+      <div className="modalCenter" onClick={cancelHandler}>
         <div className="modal">
           <p className="modalTitle">Place a bid</p>
           <p className="modalInfo">You are about to purchase</p>
