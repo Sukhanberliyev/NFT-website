@@ -9,6 +9,7 @@ import UploadSingle from "./pages/UploadSingle";
 import UploadMultiple from "./pages/UploadMultiple";
 import ConnectWallet from "./pages/ConnectWallet";
 import NftDetails from "./pages/NftDetails";
+import Wallets from "./pages/Wallets"
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/connect-wallet" exact>
           <ConnectWallet />
+        </Route>
+        <Route path="/wallets" exact>
+          <Wallets />
         </Route>
       </Switch>
     </Layout>
