@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WalletModal from "../UI/Modals/WalletModal";
 import classes from "./MyWallet.module.css";
 
 const MyWallet = () => {
@@ -26,7 +27,7 @@ const MyWallet = () => {
                 <img src="/assets/images/metamask.svg" alt="" />
               </div>
               <p>Sign in with Metamask</p>
-							<div className={classes.mostPopular}>Most Popular</div>
+              <div className={classes.mostPopular}>Most Popular</div>
             </a>
           </li>
           <li className={classes.walletList}>
@@ -61,6 +62,7 @@ const MyWallet = () => {
             </li>
           </ul>
         )}
+        <WalletModal />
       </div>
     </div>
   );
