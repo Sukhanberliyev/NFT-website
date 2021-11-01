@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import classes from "./MyWallet.module.css";
 
 const MyWallet = () => {
@@ -21,16 +22,21 @@ const MyWallet = () => {
         </p>
         <ul>
           <li className={classes.walletList}>
-            <div className={classes.walletImg}>
-              <img src="/assets/images/metamask.png" alt="" />
-            </div>
-            <p>Metamask</p>
+            <a href="https://metamask.io/">
+              <div className={classes.walletImg}>
+                <img src="/assets/images/metamask.svg" alt="" />
+              </div>
+              <p>Sign in with Metamask</p>
+							<div className={classes.mostPopular}>Most Popular</div>
+            </a>
           </li>
           <li className={classes.walletList}>
-            <div className={classes.walletImg}>
-              <img src="/assets/images/coinbaseWallet.png" alt="" />
-            </div>
-            <p>Coinbase</p>
+            <a href="https://wallet.coinbase.com/">
+              <div className={classes.walletImg}>
+                <img src="/assets/images/coinbaseWallet.png" alt="" />
+              </div>
+              <p>Coinbase</p>
+            </a>
           </li>
           <li className={classes.walletList} onClick={showMoreHandler}>
             {!open ? <p>Show more options</p> : <p>Show less options</p>}
@@ -39,12 +45,20 @@ const MyWallet = () => {
         {open && (
           <ul>
             <li className={classes.walletList}>
-              <img src="" alt="" />
-              <p>Coinbase</p>
+              <a href="https://toruswallet.io/">
+                <div className={classes.walletImg}>
+                  <img src="/assets/images/torus.png" alt="" />
+                </div>
+                <p>Torus</p>
+              </a>
             </li>
             <li className={classes.walletList}>
-              <img src="" alt="" />
-              <p>Formatic</p>
+              <a href="https://fortmatic.com/">
+                <div className={classes.walletImg}>
+                  <img src="/assets/images/fortmatic.png" alt="" />
+                </div>
+                <p>Formatic</p>
+              </a>
             </li>
           </ul>
         )}
