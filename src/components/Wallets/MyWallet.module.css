@@ -57,6 +57,7 @@
   height: 32px;
   position: absolute;
   left: 15px;
+  bottom: 10px;
 }
 .walletImg img {
   width: 100%;

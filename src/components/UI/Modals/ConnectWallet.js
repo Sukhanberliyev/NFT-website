@@ -26,7 +26,7 @@ const ConnectWalletOverlay = (props) => {
         </p>
         <div className="modalBtns">
           <div className="modalBtn">
-            <Link to="/connect-wallet">
+            <Link to="/wallets">
               <MainButton>Connect wallet</MainButton>
             </Link>
           </div>

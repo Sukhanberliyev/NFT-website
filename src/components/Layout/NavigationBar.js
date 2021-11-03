@@ -74,7 +74,7 @@ function NavigationBar() {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/connect-wallet"
+                to="/wallets"
                 className="walletBtn"
                 onClick={closeMenuHandler}
               >

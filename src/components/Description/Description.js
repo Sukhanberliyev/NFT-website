@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Container from "../Layout/Container";
 import MainButton from "../UI/MainButton";
 import OutlineButton from "../UI/OutlineButton";
+
 
 // importing css
 import classes from "./Description.module.css";
@@ -19,8 +21,12 @@ const Description = () => {
             A creative agency that lead and inspire
           </p>
           <div className={classes.descriptionBtns}>
-            <MainButton>Create Item</MainButton>
+            <Link to="/upload">
+              <MainButton>Create Item</MainButton>
+            </Link>
+            <Link to="/discover">
             <OutlineButton>Discover more</OutlineButton>
+            </Link>
           </div>
         </div>
         <div className={classes.descriptionGallery}>

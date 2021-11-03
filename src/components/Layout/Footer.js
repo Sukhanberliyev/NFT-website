@@ -67,8 +67,8 @@ const Footer = () => {
               </div>
               <div className={`footerBody ${open ? "display" : ""}`}>
                 <div className="footerMenu">
-                  <Link className="footerLink">Discover</Link>
-                  <Link className="footerLink">Connect Wallet</Link>
+                  <Link to="/discover" className="footerLink">Discover</Link>
+                  <Link to="/wallets" className="footerLink">Connect Wallet</Link>
                 </div>
               </div>
             </div>
@@ -84,8 +84,8 @@ const Footer = () => {
               </div>
               <div className={`footerBody ${openTwo ? "displayBlock" : ""}`}>
                 <div className="footerMenu">
-                  <Link className="footerLink">FAQ</Link>
-                  <Link className="footerLink">Create item</Link>
+                  <Link to="/how-it-works" className="footerLink">FAQ</Link>
+                  <Link to="/upload" className="footerLink">Create item</Link>
                 </div>
               </div>
             </div>

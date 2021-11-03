@@ -9,6 +9,7 @@ import Container from "../Layout/Container";
 import OutlineButton from "../UI/OutlineButton";
 import HeroItem from "./HeroItem";
 import Typed from "typed.js";
+import { Link } from "react-router-dom";
 
 const HeroSection = (props) => {
   // Create reference to store the DOM element containing the animation
@@ -61,7 +62,9 @@ const HeroSection = (props) => {
               <span className="typing" style={{ whiteSpace: "pre" }} ref={el} />
             </div>
             <div className={classes.heroButton}>
-              <OutlineButton>Start your search</OutlineButton>
+              <Link to="/discover">
+                <OutlineButton>Start your search</OutlineButton>
+              </Link>
             </div>
           </div>
           <Slider {...settings}>

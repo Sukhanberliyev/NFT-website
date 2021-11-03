@@ -6,7 +6,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1010;
+	z-index: 1000;
 	height: 100%;
 	width: 100%;
 }
@@ -139,6 +139,27 @@
 	font-weight: 500;
 }
 /********************************* Connect wallet end **********************************/
+
+/********************************* Wallets start **********************************/
+
+.walletModal {
+  max-width: 380px;
+  width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.walletModal p {
+   margin-top: 8px;
+   font-size: 14px;
+   color: #808080;
+   line-height: 28px;
+}
+
+/********************************* Wallets end **********************************/
 
 @media (max-width: 900px) {
 	.modalCenter {
