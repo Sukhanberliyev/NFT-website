@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import classes from "./WalletModal.module.css";
 import Backdrop from "../Backdrop";
 import "./Modals.css";
 

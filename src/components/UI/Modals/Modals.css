@@ -11,8 +11,6 @@
 	width: 100%;
 }
 .modal {
-	position: relative;
-	margin: 15px auto;
 	padding: 32px;
 	background: #fcfcfd;
 	border-radius: 16px;

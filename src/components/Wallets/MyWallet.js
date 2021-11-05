@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import WalletModal from "../UI/Modals/WalletModal";
 import classes from "./MyWallet.module.css";
+import WalletModalOverlay from "../UI/Modals/WalletModal";
 
 const MyWallet = () => {
   const [open, setOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const modalHandler = () => {
+    setModalIsOpen(!modalIsOpen)
+  }
 
   const showMoreHandler = () => {
     setOpen(!open);
@@ -18,7 +24,7 @@ const MyWallet = () => {
         <h2 className={classes.mainText}>Sign in with your wallet</h2>
         <p className={classes.subText}>
           Sign in with one of available wallet providers or create a new wallet.{" "}
-          <span>What is a wallet?</span>
+          <span onClick={modalHandler}>What is a wallet?</span>
         </p>
         <ul>
           <li className={classes.walletList}>
@@ -62,7 +68,7 @@ const MyWallet = () => {
             </li>
           </ul>
         )}
-        <WalletModal />
+        {modalIsOpen && <WalletModal onClick={modalHandler} />}
       </div>
     </div>
   );
