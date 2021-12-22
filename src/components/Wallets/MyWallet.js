@@ -27,7 +27,7 @@ const MyWallet = () => {
           <span onClick={modalHandler}>What is a wallet?</span>
         </p>
         <ul>
-          <li className={classes.walletList}>
+          <li className={`${classes.walletList} ${classes.mainWallet}`}>
             <a href="https://metamask.io/">
               <div className={classes.walletImg}>
                 <img src="/assets/images/metamask.svg" alt="" />

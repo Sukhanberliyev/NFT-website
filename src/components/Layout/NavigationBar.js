@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
+import Container from "./Container"
 import logo from "../../assets/logo.png";
 import "./NavigationBar.css";
 
@@ -30,59 +31,86 @@ function NavigationBar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
-          <NavLink to="/" className="navbar-logo" onClick={closeMenuHandler}>
-            <img src={logo} alt="" />
-            Cryptonite
-          </NavLink>
-          <div className="menu-icon" onClick={handleClick}>
-            <i
-              onClick={() => setOpen(!open)}
-              className={click ? "fas fa-times" : "fas fa-bars"}
-            />
-          </div>
-          {open && <div className="backdrop" onClick={closeMenuHandler} />}
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
+        <Container>
+          <div className="desktopNav">
+            <NavLink to="/" className="navbar-logo" onClick={closeMenuHandler}>
+              <img src={logo} alt="logo" />
+              Cryptonite
+            </NavLink>
+            <div className="desktopMenu">
               <NavLink
                 to="/discover"
                 activeClassName="active"
                 className="nav-links"
-                onClick={closeMenuHandler}
               >
                 Discover
               </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink
                 to="/how-it-works"
                 activeClassName="active"
                 className="nav-links"
+              >
+                How it works
+              </NavLink>
+              <NavLink
+                to="/upload"
+                className="uploadBtn"
+              >
+                Upload
+              </NavLink>
+              <NavLink
+                to="/wallets"
+                className="walletBtn"
+              >
+                Connect Wallet
+              </NavLink>
+            </div>
+            <div className="burger" onClick={() => setOpen(!open)}>
+              <span
+                className={open ? "burgerLine active" : "burgerLine"}
+              ></span>
+              <span
+                className={open ? "burgerLine active" : "burgerLine"}
+              ></span>
+              <span
+                className={open ? "burgerLine active" : "burgerLine"}
+              ></span>
+            </div>
+          </div>
+          <div className="mobileNav">
+            <div className={open ? "mobileMenu active" : "mobileMenu"}>
+              <NavLink
+                to="/discover"
+                activeClassName="active"
+                onClick={closeMenuHandler}
+              >
+                Discover
+              </NavLink>
+              <NavLink
+                to="/how-it-works"
+                activeClassName="active"
                 onClick={closeMenuHandler}
               >
                 How it works
               </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink
                 to="/upload"
-                className="uploadBtn"
                 onClick={closeMenuHandler}
               >
                 Upload
               </NavLink>
-            </li>
-            <li className="nav-item">
               <NavLink
                 to="/wallets"
-                className="walletBtn"
                 onClick={closeMenuHandler}
               >
                 Connect Wallet
               </NavLink>
-            </li>
-          </ul>
-        </div>
+            </div>
+            {open && (
+              <div className="backdrop" onClick={() => setOpen(!open)}></div>
+            )}
+          </div>
+          </Container>
       </nav>
     </>
   );

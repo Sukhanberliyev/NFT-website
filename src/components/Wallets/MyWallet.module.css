@@ -43,21 +43,28 @@
   cursor: pointer;
   text-decoration: none;
 }
-.walletList:first-child {
+.mainWallet{
   background-color: #3772ff;
   color: #ffffff;
   border: none;
 }
-.walletList:first-child:hover {
+.mainWallet:hover {
   background-color: #044eff;
   border: none;
 }
+.walletList .mainWallet:hover {
+  border: none;
+  color: #0085ff;
+}
+.walletList:hover {
+  border: 1px solid #000000;
+}
 .walletImg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   left: 15px;
-  bottom: 10px;
+  bottom: 15px;
 }
 .walletImg img {
   width: 100%;
@@ -69,9 +76,7 @@ a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
-.walletList:hover {
-  border: 1px solid #000000;
-}
+
 
 .mostPopular {
   padding: 6px 10px;
