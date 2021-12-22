@@ -1,5 +1,5 @@
 .main {
-  padding: 115px 0px;
+  padding: 185px 0px 115px 0px;
 }
 .mainHead {
   display: flex;
@@ -69,7 +69,10 @@
 
 @media (max-width: 768px) {
   .main {
-    padding: 64px 0px;
+    padding: 115px 0px 115px 0px;
+  }
+  .mainHead {
+    margin: 0px auto 60px;
   }
   .mainHead span {
     font-size: 32px;
