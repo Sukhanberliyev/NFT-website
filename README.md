@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# React NFT Marketplace
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cryptonite is NFT Marketplace created in Reactjs
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+* Overview
+* Live Preview
+* Tech and Frameworks
+* Screenshot
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This SPA has been created with the purpose of learning and practicing React and its features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Live Preview
 
-### `npm test`
+### <a href="https://nft-cryptonite.netlify.app/">Cryptonite</a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech and Frameworks
+### Reactjs
+* React Router 
+* Portals
+* React Hooks (useEffect, useState, useRef etc)
+* Custom Hooks
+* React-Slick
+* #### <a href="https://github.com/mattboldt/typed.js">Typed.js</a>
 
-### `npm run build`
+## Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Full responsive
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Desktop: 1440px              |  Mobile: 375px
+:-------------------------:|:-------------------------:
+![screencapture-nft-cryptonite-netlify-app-2021-12-23-12_27_31](https://user-images.githubusercontent.com/68350747/147183660-e2d52021-d839-464a-8253-e3561e14d6df.png)  |  ![screencapture-nft-cryptonite-netlify-app-2021-12-23-12_32_40](https://user-images.githubusercontent.com/68350747/147184060-c9f54a32-a47b-4031-8a41-0b98fd5d4ce6.png)
